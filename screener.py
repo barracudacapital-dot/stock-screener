@@ -551,7 +551,7 @@ def create_summary_email(results):
 """
     
     html += """
-            <a href="https://YOUR_GITHUB_USERNAME.github.io/stock-screener/" class="button">
+            <a href="https://barracudacapital-dot.github.io/stock-screener/" class="button">
                 View Full Dashboard →
             </a>
             
@@ -605,8 +605,8 @@ def main():
         return
     
     # Recipients
-    recipients = [gmail_user, 'eraats@hotmail.com']
-    print(f"Will send to: {', '.join(recipients)}")
+    recipients = gmail_user  # Single recipient
+    print(f"Will send to: {recipients}")
     
     threshold = 0.03  # 3% threshold
     all_results = {}
