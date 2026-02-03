@@ -9,7 +9,7 @@ import time
 
 # Stock universe by region
 STOCK_UNIVERSE = {
-    'US': 'russell1000_tickers.txt',
+    'US': 'russell1000_tickers_corrected.txt',
     'Canada': 'tsx_composite_tickers.txt', 
     'UK': 'ftse_allshare_tickers.txt',
     'Europe': 'stoxx600_tickers.txt'
