@@ -30,7 +30,7 @@ def get_tickers_from_file(filename):
 def calculate_52week_high_low(ticker, threshold=0.03):
     """
     Check if stock is within threshold of 52-week high or low
-    Returns: ('high', price, 52w_high, percentage) or ('low', price, 52w_low, percentage) or None
+    Returns: dict with stock data or None
     """
     try:
         stock = yf.Ticker(ticker)
@@ -44,6 +44,18 @@ def calculate_52week_high_low(ticker, threshold=0.03):
         high_52w = hist['High'].max()
         low_52w = hist['Low'].min()
         
+        # Calculate 3-month and 6-month returns
+        return_3m = None
+        return_6m = None
+        
+        if len(hist) >= 63:  # ~3 months of trading days
+            price_3m_ago = hist['Close'].iloc[-63]
+            return_3m = ((current_price / price_3m_ago) - 1) * 100
+        
+        if len(hist) >= 126:  # ~6 months of trading days
+            price_6m_ago = hist['Close'].iloc[-126]
+            return_6m = ((current_price / price_6m_ago) - 1) * 100
+        
         # Calculate distance from highs/lows
         distance_from_high = (high_52w - current_price) / high_52w
         distance_from_low = (current_price - low_52w) / low_52w if low_52w > 0 else float('inf')
@@ -51,12 +63,26 @@ def calculate_52week_high_low(ticker, threshold=0.03):
         # Check if within threshold of 52-week high
         if distance_from_high <= threshold:
             pct_from_high = ((current_price / high_52w) - 1) * 100
-            return ('high', current_price, high_52w, pct_from_high)
+            return {
+                'type': 'high',
+                'price': current_price,
+                'level': high_52w,
+                'distance': pct_from_high,
+                'return_3m': return_3m,
+                'return_6m': return_6m
+            }
         
         # Check if within threshold of 52-week low
         if distance_from_low <= threshold:
             pct_from_low = ((current_price / low_52w) - 1) * 100
-            return ('low', current_price, low_52w, pct_from_low)
+            return {
+                'type': 'low',
+                'price': current_price,
+                'level': low_52w,
+                'distance': pct_from_low,
+                'return_3m': return_3m,
+                'return_6m': return_6m
+            }
         
         return None
         
@@ -78,15 +104,16 @@ def screen_region(region_name, tickers, threshold=0.03):
         result = calculate_52week_high_low(ticker, threshold)
         
         if result:
-            signal_type, current, level, pct = result
             stock_info = {
                 'ticker': ticker,
-                'price': round(current, 2),
-                'level': round(level, 2),
-                'distance': round(pct, 2)
+                'price': round(result['price'], 2),
+                'level': round(result['level'], 2),
+                'distance': round(result['distance'], 2),
+                'return_3m': round(result['return_3m'], 2) if result['return_3m'] is not None else None,
+                'return_6m': round(result['return_6m'], 2) if result['return_6m'] is not None else None
             }
             
-            if signal_type == 'high':
+            if result['type'] == 'high':
                 highs.append(stock_info)
             else:
                 lows.append(stock_info)
@@ -385,17 +412,26 @@ def create_dashboard_html(results):
                             <th class="high sortable" onclick="sortTable('{region}-highs-table', 1)">Current Price</th>
                             <th class="high sortable" onclick="sortTable('{region}-highs-table', 2)">52W High</th>
                             <th class="high sortable" onclick="sortTable('{region}-highs-table', 3)">Distance</th>
+                            <th class="high sortable" onclick="sortTable('{region}-highs-table', 4)">3M Return</th>
+                            <th class="high sortable" onclick="sortTable('{region}-highs-table', 5)">6M Return</th>
                         </tr>
                     </thead>
                     <tbody>
 """
             for stock in highs:
+                return_3m_display = f"{stock['return_3m']:+.2f}%" if stock['return_3m'] is not None else "N/A"
+                return_6m_display = f"{stock['return_6m']:+.2f}%" if stock['return_6m'] is not None else "N/A"
+                return_3m_class = "distance-high" if stock['return_3m'] and stock['return_3m'] > 0 else "distance-low" if stock['return_3m'] and stock['return_3m'] < 0 else ""
+                return_6m_class = "distance-high" if stock['return_6m'] and stock['return_6m'] > 0 else "distance-low" if stock['return_6m'] and stock['return_6m'] < 0 else ""
+                
                 html += f"""
                         <tr>
                             <td class="ticker-cell">{stock['ticker']}</td>
                             <td class="price-cell">${stock['price']:.2f}</td>
                             <td class="price-cell">${stock['level']:.2f}</td>
                             <td class="distance-high">{stock['distance']:+.2f}%</td>
+                            <td class="{return_3m_class}">{return_3m_display}</td>
+                            <td class="{return_6m_class}">{return_6m_display}</td>
                         </tr>
 """
             html += """
@@ -423,17 +459,26 @@ def create_dashboard_html(results):
                             <th class="low sortable" onclick="sortTable('{region}-lows-table', 1)">Current Price</th>
                             <th class="low sortable" onclick="sortTable('{region}-lows-table', 2)">52W Low</th>
                             <th class="low sortable" onclick="sortTable('{region}-lows-table', 3)">Distance</th>
+                            <th class="low sortable" onclick="sortTable('{region}-lows-table', 4)">3M Return</th>
+                            <th class="low sortable" onclick="sortTable('{region}-lows-table', 5)">6M Return</th>
                         </tr>
                     </thead>
                     <tbody>
 """
             for stock in lows:
+                return_3m_display = f"{stock['return_3m']:+.2f}%" if stock['return_3m'] is not None else "N/A"
+                return_6m_display = f"{stock['return_6m']:+.2f}%" if stock['return_6m'] is not None else "N/A"
+                return_3m_class = "distance-high" if stock['return_3m'] and stock['return_3m'] > 0 else "distance-low" if stock['return_3m'] and stock['return_3m'] < 0 else ""
+                return_6m_class = "distance-high" if stock['return_6m'] and stock['return_6m'] > 0 else "distance-low" if stock['return_6m'] and stock['return_6m'] < 0 else ""
+                
                 html += f"""
                         <tr>
                             <td class="ticker-cell">{stock['ticker']}</td>
                             <td class="price-cell">${stock['price']:.2f}</td>
                             <td class="price-cell">${stock['level']:.2f}</td>
                             <td class="distance-low">{stock['distance']:+.2f}%</td>
+                            <td class="{return_3m_class}">{return_3m_display}</td>
+                            <td class="{return_6m_class}">{return_6m_display}</td>
                         </tr>
 """
             html += """

@@ -241,15 +241,15 @@
             <div class="date">Tuesday, February 03, 2026</div>
             <div class="stats">
                 <div class="stat-card">
-                    <div class="stat-number">206</div>
+                    <div class="stat-number">200</div>
                     <div class="stat-label">Stocks at 52W Highs</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">85</div>
+                    <div class="stat-number">84</div>
                     <div class="stat-label">Stocks at 52W Lows</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">291</div>
+                    <div class="stat-number">284</div>
                     <div class="stat-label">Total Signals</div>
                 </div>
             </div>
@@ -261,7 +261,7 @@
             <div class="category">
                 <h3>
                     <span>52-Week Highs</span>
-                    <span class="badge high">206 stocks</span>
+                    <span class="badge high">200 stocks</span>
                 </h3>
                 <input type="text" class="search-box" placeholder="Search tickers..." 
                        onkeyup="filterTable(this, 'US-highs-table')">
@@ -272,295 +272,370 @@
                             <th class="high sortable" onclick="sortTable('US-highs-table', 1)">Current Price</th>
                             <th class="high sortable" onclick="sortTable('US-highs-table', 2)">52W High</th>
                             <th class="high sortable" onclick="sortTable('US-highs-table', 3)">Distance</th>
+                            <th class="high sortable" onclick="sortTable('US-highs-table', 4)">3M Return</th>
+                            <th class="high sortable" onclick="sortTable('US-highs-table', 5)">6M Return</th>
                         </tr>
                     </thead>
                     <tbody>
 
                         <tr>
                             <td class="ticker-cell">GOOGL</td>
-                            <td class="price-cell">$338.74</td>
+                            <td class="price-cell">$338.69</td>
                             <td class="price-cell">$349.00</td>
-                            <td class="distance-high">-2.94%</td>
+                            <td class="distance-high">-2.95%</td>
+                            <td class="distance-high">+19.45%</td>
+                            <td class="distance-high">+74.25%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">GOOG</td>
-                            <td class="price-cell">$339.76</td>
+                            <td class="price-cell">$339.65</td>
                             <td class="price-cell">$350.15</td>
-                            <td class="distance-high">-2.97%</td>
+                            <td class="distance-high">-3.00%</td>
+                            <td class="distance-high">+19.62%</td>
+                            <td class="distance-high">+74.17%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">XOM</td>
-                            <td class="price-cell">$143.74</td>
+                            <td class="price-cell">$144.50</td>
                             <td class="price-cell">$145.01</td>
-                            <td class="distance-high">-0.87%</td>
+                            <td class="distance-high">-0.35%</td>
+                            <td class="distance-high">+28.13%</td>
+                            <td class="distance-high">+37.19%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">JNJ</td>
-                            <td class="price-cell">$234.14</td>
+                            <td class="price-cell">$234.21</td>
                             <td class="price-cell">$235.20</td>
-                            <td class="distance-high">-0.45%</td>
+                            <td class="distance-high">-0.42%</td>
+                            <td class="distance-high">+26.54%</td>
+                            <td class="distance-high">+39.06%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">WMT</td>
-                            <td class="price-cell">$126.62</td>
+                            <td class="price-cell">$127.13</td>
                             <td class="price-cell">$128.16</td>
-                            <td class="distance-high">-1.21%</td>
+                            <td class="distance-high">-0.81%</td>
+                            <td class="distance-high">+25.40%</td>
+                            <td class="distance-high">+28.57%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">CVX</td>
-                            <td class="price-cell">$177.78</td>
-                            <td class="price-cell">$177.94</td>
-                            <td class="distance-high">-0.09%</td>
+                            <td class="price-cell">$178.38</td>
+                            <td class="price-cell">$178.38</td>
+                            <td class="distance-high">+0.00%</td>
+                            <td class="distance-high">+17.10%</td>
+                            <td class="distance-high">+19.17%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">CSCO</td>
-                            <td class="price-cell">$82.85</td>
+                            <td class="price-cell">$82.89</td>
                             <td class="price-cell">$83.24</td>
-                            <td class="distance-high">-0.47%</td>
+                            <td class="distance-high">-0.43%</td>
+                            <td class="distance-high">+11.93%</td>
+                            <td class="distance-high">+24.16%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">CAT</td>
-                            <td class="price-cell">$700.89</td>
+                            <td class="price-cell">$699.43</td>
                             <td class="price-cell">$710.03</td>
-                            <td class="distance-high">-1.29%</td>
+                            <td class="distance-high">-1.49%</td>
+                            <td class="distance-high">+22.87%</td>
+                            <td class="distance-high">+61.91%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">KO</td>
-                            <td class="price-cell">$76.89</td>
+                            <td class="price-cell">$77.00</td>
                             <td class="price-cell">$77.50</td>
-                            <td class="distance-high">-0.79%</td>
+                            <td class="distance-high">-0.65%</td>
+                            <td class="distance-high">+14.08%</td>
+                            <td class="distance-high">+13.16%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">MRK</td>
-                            <td class="price-cell">$115.93</td>
+                            <td class="price-cell">$116.74</td>
                             <td class="price-cell">$118.45</td>
-                            <td class="distance-high">-2.12%</td>
+                            <td class="distance-high">-1.44%</td>
+                            <td class="distance-high">+42.73%</td>
+                            <td class="distance-high">+47.17%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">PM</td>
-                            <td class="price-cell">$178.14</td>
+                            <td class="price-cell">$177.94</td>
                             <td class="price-cell">$181.91</td>
-                            <td class="distance-high">-2.07%</td>
+                            <td class="distance-high">-2.18%</td>
+                            <td class="distance-high">+24.18%</td>
+                            <td class="distance-high">+10.42%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">RTX</td>
-                            <td class="price-cell">$203.41</td>
+                            <td class="price-cell">$204.53</td>
                             <td class="price-cell">$205.36</td>
-                            <td class="distance-high">-0.95%</td>
+                            <td class="distance-high">-0.40%</td>
+                            <td class="distance-high">+15.98%</td>
+                            <td class="distance-high">+31.93%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">MCD</td>
-                            <td class="price-cell">$320.16</td>
+                            <td class="price-cell">$319.99</td>
                             <td class="price-cell">$322.89</td>
-                            <td class="distance-high">-0.85%</td>
+                            <td class="distance-high">-0.90%</td>
+                            <td class="distance-high">+8.62%</td>
+                            <td class="distance-high">+8.36%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">PEP</td>
-                            <td class="price-cell">$163.09</td>
+                            <td class="price-cell">$163.15</td>
                             <td class="price-cell">$163.33</td>
-                            <td class="distance-high">-0.15%</td>
+                            <td class="distance-high">-0.11%</td>
+                            <td class="distance-high">+14.73%</td>
+                            <td class="distance-high">+19.30%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">GEV</td>
-                            <td class="price-cell">$772.04</td>
+                            <td class="price-cell">$772.23</td>
                             <td class="price-cell">$791.95</td>
-                            <td class="distance-high">-2.51%</td>
+                            <td class="distance-high">-2.49%</td>
+                            <td class="distance-high">+32.95%</td>
+                            <td class="distance-high">+18.99%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">TXN</td>
-                            <td class="price-cell">$224.75</td>
+                            <td class="price-cell">$223.68</td>
                             <td class="price-cell">$228.83</td>
-                            <td class="distance-high">-1.78%</td>
+                            <td class="distance-high">-2.25%</td>
+                            <td class="distance-high">+39.44%</td>
+                            <td class="distance-high">+22.52%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">VZ</td>
-                            <td class="price-cell">$46.51</td>
+                            <td class="price-cell">$46.56</td>
                             <td class="price-cell">$46.76</td>
-                            <td class="distance-high">-0.53%</td>
+                            <td class="distance-high">-0.42%</td>
+                            <td class="distance-high">+20.02%</td>
+                            <td class="distance-high">+12.93%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">NEE</td>
-                            <td class="price-cell">$88.53</td>
+                            <td class="price-cell">$88.46</td>
                             <td class="price-cell">$89.19</td>
-                            <td class="distance-high">-0.75%</td>
+                            <td class="distance-high">-0.82%</td>
+                            <td class="distance-high">+8.90%</td>
+                            <td class="distance-high">+26.09%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">SCHW</td>
-                            <td class="price-cell">$103.57</td>
+                            <td class="price-cell">$103.53</td>
                             <td class="price-cell">$105.81</td>
-                            <td class="distance-high">-2.12%</td>
+                            <td class="distance-high">-2.15%</td>
+                            <td class="distance-high">+11.46%</td>
+                            <td class="distance-high">+7.96%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">GILD</td>
-                            <td class="price-cell">$144.82</td>
+                            <td class="price-cell">$145.38</td>
                             <td class="price-cell">$145.94</td>
-                            <td class="distance-high">-0.77%</td>
+                            <td class="distance-high">-0.38%</td>
+                            <td class="distance-high">+19.90%</td>
+                            <td class="distance-high">+31.03%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">LOW</td>
-                            <td class="price-cell">$273.71</td>
+                            <td class="price-cell">$273.81</td>
                             <td class="price-cell">$281.36</td>
-                            <td class="distance-high">-2.72%</td>
+                            <td class="distance-high">-2.68%</td>
+                            <td class="distance-high">+16.72%</td>
+                            <td class="distance-high">+16.40%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">HON</td>
-                            <td class="price-cell">$229.49</td>
+                            <td class="price-cell">$229.73</td>
                             <td class="price-cell">$231.70</td>
-                            <td class="distance-high">-0.95%</td>
+                            <td class="distance-high">-0.85%</td>
+                            <td class="distance-high">+16.86%</td>
+                            <td class="distance-high">+11.50%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">UNP</td>
-                            <td class="price-cell">$240.22</td>
+                            <td class="price-cell">$241.38</td>
                             <td class="price-cell">$247.30</td>
-                            <td class="distance-high">-2.86%</td>
+                            <td class="distance-high">-2.39%</td>
+                            <td class="distance-high">+10.95%</td>
+                            <td class="distance-high">+9.57%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">MDT</td>
-                            <td class="price-cell">$103.91</td>
+                            <td class="price-cell">$103.95</td>
                             <td class="price-cell">$106.33</td>
-                            <td class="distance-high">-2.28%</td>
+                            <td class="distance-high">-2.24%</td>
+                            <td class="distance-high">+15.24%</td>
+                            <td class="distance-high">+16.80%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">LMT</td>
-                            <td class="price-cell">$627.87</td>
+                            <td class="price-cell">$628.86</td>
                             <td class="price-cell">$646.59</td>
-                            <td class="distance-high">-2.89%</td>
+                            <td class="distance-high">-2.74%</td>
+                            <td class="distance-high">+29.86%</td>
+                            <td class="distance-high">+49.04%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">DE</td>
-                            <td class="price-cell">$542.34</td>
+                            <td class="price-cell">$542.74</td>
                             <td class="price-cell">$545.23</td>
-                            <td class="distance-high">-0.53%</td>
+                            <td class="distance-high">-0.46%</td>
+                            <td class="distance-high">+17.90%</td>
+                            <td class="distance-high">+7.46%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">COP</td>
-                            <td class="price-cell">$104.59</td>
+                            <td class="price-cell">$104.89</td>
                             <td class="price-cell">$105.72</td>
-                            <td class="distance-high">-1.07%</td>
+                            <td class="distance-high">-0.79%</td>
+                            <td class="distance-high">+19.52%</td>
+                            <td class="distance-high">+14.52%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">PH</td>
-                            <td class="price-cell">$958.54</td>
+                            <td class="price-cell">$959.13</td>
                             <td class="price-cell">$972.80</td>
-                            <td class="distance-high">-1.47%</td>
+                            <td class="distance-high">-1.40%</td>
+                            <td class="distance-high">+24.53%</td>
+                            <td class="distance-high">+34.78%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">PLD</td>
-                            <td class="price-cell">$132.01</td>
+                            <td class="price-cell">$132.18</td>
                             <td class="price-cell">$134.94</td>
-                            <td class="distance-high">-2.17%</td>
+                            <td class="distance-high">-2.04%</td>
+                            <td class="distance-high">+7.24%</td>
+                            <td class="distance-high">+25.56%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">CB</td>
-                            <td class="price-cell">$313.14</td>
+                            <td class="price-cell">$313.45</td>
                             <td class="price-cell">$316.94</td>
-                            <td class="distance-high">-1.20%</td>
+                            <td class="distance-high">-1.10%</td>
+                            <td class="distance-high">+12.65%</td>
+                            <td class="distance-high">+17.10%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">CME</td>
-                            <td class="price-cell">$293.80</td>
+                            <td class="price-cell">$294.12</td>
                             <td class="price-cell">$296.16</td>
-                            <td class="distance-high">-0.80%</td>
+                            <td class="distance-high">-0.69%</td>
+                            <td class="distance-high">+11.86%</td>
+                            <td class="distance-high">+4.32%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">NOC</td>
-                            <td class="price-cell">$702.58</td>
-                            <td class="price-cell">$705.50</td>
-                            <td class="distance-high">-0.41%</td>
-                        </tr>
-
-                        <tr>
-                            <td class="ticker-cell">WDC</td>
-                            <td class="price-cell">$288.75</td>
-                            <td class="price-cell">$296.50</td>
-                            <td class="distance-high">-2.61%</td>
+                            <td class="price-cell">$706.17</td>
+                            <td class="price-cell">$706.17</td>
+                            <td class="distance-high">+0.00%</td>
+                            <td class="distance-high">+23.22%</td>
+                            <td class="distance-high">+20.66%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">PNC</td>
-                            <td class="price-cell">$232.93</td>
-                            <td class="price-cell">$233.16</td>
-                            <td class="distance-high">-0.10%</td>
+                            <td class="price-cell">$232.79</td>
+                            <td class="price-cell">$233.47</td>
+                            <td class="distance-high">-0.29%</td>
+                            <td class="distance-high">+28.37%</td>
+                            <td class="distance-high">+25.26%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">USB</td>
-                            <td class="price-cell">$58.54</td>
+                            <td class="price-cell">$58.53</td>
                             <td class="price-cell">$58.86</td>
-                            <td class="distance-high">-0.54%</td>
+                            <td class="distance-high">-0.57%</td>
+                            <td class="distance-high">+26.75%</td>
+                            <td class="distance-high">+34.03%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">EMR</td>
-                            <td class="price-cell">$151.04</td>
+                            <td class="price-cell">$151.73</td>
                             <td class="price-cell">$154.04</td>
-                            <td class="distance-high">-1.95%</td>
+                            <td class="distance-high">-1.50%</td>
+                            <td class="distance-high">+8.83%</td>
+                            <td class="distance-high">+8.84%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">CMI</td>
-                            <td class="price-cell">$601.23</td>
+                            <td class="price-cell">$601.22</td>
                             <td class="price-cell">$612.10</td>
                             <td class="distance-high">-1.78%</td>
+                            <td class="distance-high">+37.95%</td>
+                            <td class="distance-high">+62.61%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">JCI</td>
-                            <td class="price-cell">$123.72</td>
+                            <td class="price-cell">$123.83</td>
                             <td class="price-cell">$124.81</td>
-                            <td class="distance-high">-0.87%</td>
+                            <td class="distance-high">-0.78%</td>
+                            <td class="distance-high">+9.41%</td>
+                            <td class="distance-high">+18.12%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">WMB</td>
-                            <td class="price-cell">$68.33</td>
+                            <td class="price-cell">$68.43</td>
                             <td class="price-cell">$68.53</td>
-                            <td class="distance-high">-0.28%</td>
+                            <td class="distance-high">-0.14%</td>
+                            <td class="distance-high">+16.89%</td>
+                            <td class="distance-high">+17.94%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">GM</td>
-                            <td class="price-cell">$85.94</td>
+                            <td class="price-cell">$85.86</td>
                             <td class="price-cell">$87.31</td>
-                            <td class="distance-high">-1.56%</td>
+                            <td class="distance-high">-1.66%</td>
+                            <td class="distance-high">+26.11%</td>
+                            <td class="distance-high">+64.04%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">ITW</td>
-                            <td class="price-cell">$277.82</td>
+                            <td class="price-cell">$277.93</td>
                             <td class="price-cell">$282.88</td>
-                            <td class="distance-high">-1.79%</td>
+                            <td class="distance-high">-1.75%</td>
+                            <td class="distance-high">+15.05%</td>
+                            <td class="distance-high">+9.93%</td>
                         </tr>
 
                         <tr>
@@ -568,118 +643,152 @@
                             <td class="price-cell">$39.01</td>
                             <td class="price-cell">$39.45</td>
                             <td class="distance-high">-1.11%</td>
+                            <td class="distance-high">+9.28%</td>
+                            <td class="distance-high">+10.27%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">FDX</td>
-                            <td class="price-cell">$353.55</td>
+                            <td class="price-cell">$353.99</td>
                             <td class="price-cell">$355.14</td>
-                            <td class="distance-high">-0.45%</td>
+                            <td class="distance-high">-0.32%</td>
+                            <td class="distance-high">+40.64%</td>
+                            <td class="distance-high">+61.00%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">ECL</td>
-                            <td class="price-cell">$282.58</td>
+                            <td class="price-cell">$282.77</td>
                             <td class="price-cell">$286.00</td>
-                            <td class="distance-high">-1.20%</td>
+                            <td class="distance-high">-1.13%</td>
+                            <td class="distance-high">+10.14%</td>
+                            <td class="distance-high">+6.67%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">PWR</td>
-                            <td class="price-cell">$483.88</td>
+                            <td class="price-cell">$484.53</td>
                             <td class="price-cell">$490.47</td>
-                            <td class="distance-high">-1.34%</td>
+                            <td class="distance-high">-1.21%</td>
+                            <td class="distance-high">+7.51%</td>
+                            <td class="distance-high">+24.58%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">HLT</td>
-                            <td class="price-cell">$303.17</td>
+                            <td class="price-cell">$303.05</td>
                             <td class="price-cell">$306.28</td>
-                            <td class="distance-high">-1.02%</td>
+                            <td class="distance-high">-1.06%</td>
+                            <td class="distance-high">+17.03%</td>
+                            <td class="distance-high">+16.62%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">TFC</td>
-                            <td class="price-cell">$53.93</td>
-                            <td class="price-cell">$53.99</td>
-                            <td class="distance-high">-0.10%</td>
+                            <td class="price-cell">$53.83</td>
+                            <td class="price-cell">$54.04</td>
+                            <td class="distance-high">-0.39%</td>
+                            <td class="distance-high">+23.15%</td>
+                            <td class="distance-high">+26.96%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">NSC</td>
-                            <td class="price-cell">$297.40</td>
+                            <td class="price-cell">$298.05</td>
                             <td class="price-cell">$300.79</td>
-                            <td class="distance-high">-1.13%</td>
+                            <td class="distance-high">-0.91%</td>
+                            <td class="distance-high">+6.13%</td>
+                            <td class="distance-high">+7.01%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">PCAR</td>
-                            <td class="price-cell">$127.78</td>
+                            <td class="price-cell">$127.69</td>
                             <td class="price-cell">$128.30</td>
-                            <td class="distance-high">-0.41%</td>
+                            <td class="distance-high">-0.47%</td>
+                            <td class="distance-high">+33.14%</td>
+                            <td class="distance-high">+32.57%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">TRV</td>
-                            <td class="price-cell">$288.87</td>
+                            <td class="price-cell">$289.11</td>
                             <td class="price-cell">$295.68</td>
-                            <td class="distance-high">-2.30%</td>
+                            <td class="distance-high">-2.22%</td>
+                            <td class="distance-high">+8.44%</td>
+                            <td class="distance-high">+9.90%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">SPG</td>
-                            <td class="price-cell">$190.99</td>
+                            <td class="price-cell">$190.88</td>
                             <td class="price-cell">$193.50</td>
-                            <td class="distance-high">-1.30%</td>
+                            <td class="distance-high">-1.35%</td>
+                            <td class="distance-high">+9.38%</td>
+                            <td class="distance-high">+15.49%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">ROST</td>
-                            <td class="price-cell">$191.82</td>
+                            <td class="price-cell">$191.78</td>
                             <td class="price-cell">$194.92</td>
-                            <td class="distance-high">-1.59%</td>
+                            <td class="distance-high">-1.61%</td>
+                            <td class="distance-high">+19.24%</td>
+                            <td class="distance-high">+35.93%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">PSX</td>
-                            <td class="price-cell">$146.81</td>
+                            <td class="price-cell">$147.46</td>
                             <td class="price-cell">$147.96</td>
-                            <td class="distance-high">-0.78%</td>
+                            <td class="distance-high">-0.34%</td>
+                            <td class="distance-high">+7.83%</td>
+                            <td class="distance-high">+23.03%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">KMI</td>
-                            <td class="price-cell">$30.24</td>
+                            <td class="price-cell">$30.27</td>
                             <td class="price-cell">$30.39</td>
-                            <td class="distance-high">-0.49%</td>
+                            <td class="distance-high">-0.36%</td>
+                            <td class="distance-high">+17.21%</td>
+                            <td class="distance-high">+10.25%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">MNST</td>
-                            <td class="price-cell">$81.63</td>
+                            <td class="price-cell">$81.79</td>
                             <td class="price-cell">$83.24</td>
-                            <td class="distance-high">-1.93%</td>
+                            <td class="distance-high">-1.74%</td>
+                            <td class="distance-high">+22.98%</td>
+                            <td class="distance-high">+38.54%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">BKR</td>
-                            <td class="price-cell">$57.22</td>
+                            <td class="price-cell">$57.47</td>
                             <td class="price-cell">$58.50</td>
-                            <td class="distance-high">-2.19%</td>
+                            <td class="distance-high">-1.77%</td>
+                            <td class="distance-high">+18.70%</td>
+                            <td class="distance-high">+31.76%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">O</td>
-                            <td class="price-cell">$61.56</td>
+                            <td class="price-cell">$61.62</td>
                             <td class="price-cell">$61.67</td>
-                            <td class="distance-high">-0.19%</td>
+                            <td class="distance-high">-0.10%</td>
+                            <td class="distance-high">+7.35%</td>
+                            <td class="distance-high">+10.74%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">VLO</td>
-                            <td class="price-cell">$190.31</td>
+                            <td class="price-cell">$191.24</td>
                             <td class="price-cell">$194.50</td>
-                            <td class="distance-high">-2.15%</td>
+                            <td class="distance-high">-1.68%</td>
+                            <td class="distance-high">+12.15%</td>
+                            <td class="distance-high">+40.64%</td>
                         </tr>
 
                         <tr>
@@ -687,293 +796,359 @@
                             <td class="price-cell">$112.30</td>
                             <td class="price-cell">$115.24</td>
                             <td class="distance-high">-2.55%</td>
+                            <td class="distance-high">+5.53%</td>
+                            <td class="distance-high">+14.74%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">AME</td>
-                            <td class="price-cell">$229.24</td>
+                            <td class="price-cell">$229.52</td>
                             <td class="price-cell">$233.17</td>
-                            <td class="distance-high">-1.69%</td>
+                            <td class="distance-high">-1.57%</td>
+                            <td class="distance-high">+15.69%</td>
+                            <td class="distance-high">+24.50%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">CAH</td>
-                            <td class="price-cell">$219.58</td>
+                            <td class="price-cell">$219.20</td>
                             <td class="price-cell">$220.27</td>
-                            <td class="distance-high">-0.31%</td>
+                            <td class="distance-high">-0.49%</td>
+                            <td class="distance-high">+15.52%</td>
+                            <td class="distance-high">+39.32%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">D</td>
-                            <td class="price-cell">$61.37</td>
+                            <td class="price-cell">$61.41</td>
                             <td class="price-cell">$62.17</td>
-                            <td class="distance-high">-1.29%</td>
+                            <td class="distance-high">-1.22%</td>
+                            <td class="distance-high">+6.18%</td>
+                            <td class="distance-high">+2.84%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">EA</td>
-                            <td class="price-cell">$201.71</td>
+                            <td class="price-cell">$201.46</td>
                             <td class="price-cell">$204.89</td>
-                            <td class="distance-high">-1.55%</td>
+                            <td class="distance-high">-1.67%</td>
+                            <td class="distance-high">+0.88%</td>
+                            <td class="distance-high">+25.39%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">CTVA</td>
-                            <td class="price-cell">$74.90</td>
+                            <td class="price-cell">$74.96</td>
                             <td class="price-cell">$77.02</td>
-                            <td class="distance-high">-2.75%</td>
+                            <td class="distance-high">-2.68%</td>
+                            <td class="distance-high">+21.10%</td>
+                            <td class="distance-high">+4.19%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">FERG</td>
-                            <td class="price-cell">$257.14</td>
+                            <td class="price-cell">$257.20</td>
                             <td class="price-cell">$262.88</td>
-                            <td class="distance-high">-2.18%</td>
+                            <td class="distance-high">-2.16%</td>
+                            <td class="distance-high">+4.31%</td>
+                            <td class="distance-high">+14.60%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">ROK</td>
-                            <td class="price-cell">$429.63</td>
+                            <td class="price-cell">$429.49</td>
                             <td class="price-cell">$433.97</td>
-                            <td class="distance-high">-1.00%</td>
+                            <td class="distance-high">-1.03%</td>
+                            <td class="distance-high">+18.25%</td>
+                            <td class="distance-high">+25.06%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">GWW</td>
-                            <td class="price-cell">$1152.20</td>
+                            <td class="price-cell">$1162.92</td>
                             <td class="price-cell">$1169.57</td>
-                            <td class="distance-high">-1.49%</td>
+                            <td class="distance-high">-0.57%</td>
+                            <td class="distance-high">+20.63%</td>
+                            <td class="distance-high">+24.88%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">FITB</td>
-                            <td class="price-cell">$52.79</td>
+                            <td class="price-cell">$52.64</td>
                             <td class="price-cell">$53.33</td>
-                            <td class="distance-high">-1.01%</td>
+                            <td class="distance-high">-1.29%</td>
+                            <td class="distance-high">+27.83%</td>
+                            <td class="distance-high">+29.56%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">YUM</td>
-                            <td class="price-cell">$158.79</td>
+                            <td class="price-cell">$158.71</td>
                             <td class="price-cell">$161.06</td>
-                            <td class="distance-high">-1.41%</td>
+                            <td class="distance-high">-1.46%</td>
+                            <td class="distance-high">+14.41%</td>
+                            <td class="distance-high">+14.87%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">ETR</td>
-                            <td class="price-cell">$96.72</td>
+                            <td class="price-cell">$96.68</td>
                             <td class="price-cell">$98.00</td>
-                            <td class="distance-high">-1.31%</td>
+                            <td class="distance-high">-1.34%</td>
+                            <td class="distance-high">+0.48%</td>
+                            <td class="distance-high">+8.38%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">TRGP</td>
-                            <td class="price-cell">$203.32</td>
+                            <td class="price-cell">$203.88</td>
                             <td class="price-cell">$207.01</td>
-                            <td class="distance-high">-1.78%</td>
+                            <td class="distance-high">-1.51%</td>
+                            <td class="distance-high">+31.27%</td>
+                            <td class="distance-high">+26.05%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">NUE</td>
-                            <td class="price-cell">$186.60</td>
+                            <td class="price-cell">$186.90</td>
                             <td class="price-cell">$188.92</td>
-                            <td class="distance-high">-1.23%</td>
+                            <td class="distance-high">-1.07%</td>
+                            <td class="distance-high">+26.61%</td>
+                            <td class="distance-high">+35.03%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">FIX</td>
-                            <td class="price-cell">$1201.73</td>
+                            <td class="price-cell">$1203.33</td>
                             <td class="price-cell">$1220.00</td>
-                            <td class="distance-high">-1.50%</td>
+                            <td class="distance-high">-1.37%</td>
+                            <td class="distance-high">+23.16%</td>
+                            <td class="distance-high">+74.26%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">VMC</td>
-                            <td class="price-cell">$310.79</td>
+                            <td class="price-cell">$310.62</td>
                             <td class="price-cell">$318.67</td>
-                            <td class="distance-high">-2.47%</td>
+                            <td class="distance-high">-2.53%</td>
+                            <td class="distance-high">+7.83%</td>
+                            <td class="distance-high">+10.06%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">SYY</td>
-                            <td class="price-cell">$84.74</td>
+                            <td class="price-cell">$84.81</td>
                             <td class="price-cell">$85.33</td>
-                            <td class="distance-high">-0.69%</td>
+                            <td class="distance-high">-0.61%</td>
+                            <td class="distance-high">+17.19%</td>
+                            <td class="distance-high">+8.51%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">WAB</td>
-                            <td class="price-cell">$235.22</td>
+                            <td class="price-cell">$235.53</td>
                             <td class="price-cell">$239.07</td>
-                            <td class="distance-high">-1.61%</td>
+                            <td class="distance-high">-1.48%</td>
+                            <td class="distance-high">+15.07%</td>
+                            <td class="distance-high">+25.00%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">MLM</td>
-                            <td class="price-cell">$665.39</td>
+                            <td class="price-cell">$664.39</td>
                             <td class="price-cell">$676.73</td>
-                            <td class="distance-high">-1.68%</td>
-                        </tr>
-
-                        <tr>
-                            <td class="ticker-cell">TER</td>
-                            <td class="price-cell">$279.98</td>
-                            <td class="price-cell">$285.92</td>
-                            <td class="distance-high">-2.08%</td>
+                            <td class="distance-high">-1.82%</td>
+                            <td class="distance-high">+7.42%</td>
+                            <td class="distance-high">+9.66%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">HIG</td>
-                            <td class="price-cell">$138.09</td>
+                            <td class="price-cell">$138.15</td>
                             <td class="price-cell">$140.50</td>
-                            <td class="distance-high">-1.72%</td>
+                            <td class="distance-high">-1.67%</td>
+                            <td class="distance-high">+11.66%</td>
+                            <td class="distance-high">+9.20%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">KEYS</td>
-                            <td class="price-cell">$225.72</td>
+                            <td class="price-cell">$225.43</td>
                             <td class="price-cell">$227.99</td>
-                            <td class="distance-high">-1.00%</td>
-                        </tr>
-
-                        <tr>
-                            <td class="ticker-cell">HBAN</td>
-                            <td class="price-cell">$18.39</td>
-                            <td class="price-cell">$18.91</td>
-                            <td class="distance-high">-2.78%</td>
+                            <td class="distance-high">-1.12%</td>
+                            <td class="distance-high">+21.08%</td>
+                            <td class="distance-high">+39.74%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">IR</td>
-                            <td class="price-cell">$91.96</td>
+                            <td class="price-cell">$92.50</td>
                             <td class="price-cell">$94.01</td>
-                            <td class="distance-high">-2.18%</td>
+                            <td class="distance-high">-1.60%</td>
+                            <td class="distance-high">+21.74%</td>
+                            <td class="distance-high">+19.18%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">MTB</td>
-                            <td class="price-cell">$227.38</td>
+                            <td class="price-cell">$227.48</td>
                             <td class="price-cell">$229.68</td>
-                            <td class="distance-high">-1.00%</td>
+                            <td class="distance-high">-0.96%</td>
+                            <td class="distance-high">+25.48%</td>
+                            <td class="distance-high">+22.85%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">ACGL</td>
-                            <td class="price-cell">$97.19</td>
+                            <td class="price-cell">$97.41</td>
                             <td class="price-cell">$97.85</td>
-                            <td class="distance-high">-0.67%</td>
+                            <td class="distance-high">-0.45%</td>
+                            <td class="distance-high">+13.27%</td>
+                            <td class="distance-high">+9.87%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">ADM</td>
-                            <td class="price-cell">$67.86</td>
+                            <td class="price-cell">$68.09</td>
                             <td class="price-cell">$69.75</td>
-                            <td class="distance-high">-2.72%</td>
+                            <td class="distance-high">-2.38%</td>
+                            <td class="distance-high">+14.27%</td>
+                            <td class="distance-high">+20.19%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">HSY</td>
-                            <td class="price-cell">$201.54</td>
+                            <td class="price-cell">$202.04</td>
                             <td class="price-cell">$204.35</td>
-                            <td class="distance-high">-1.38%</td>
+                            <td class="distance-high">-1.13%</td>
+                            <td class="distance-high">+25.43%</td>
+                            <td class="distance-high">+8.58%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">TDY</td>
-                            <td class="price-cell">$630.72</td>
-                            <td class="price-cell">$632.67</td>
-                            <td class="distance-high">-0.31%</td>
+                            <td class="price-cell">$632.78</td>
+                            <td class="price-cell">$634.01</td>
+                            <td class="distance-high">-0.19%</td>
+                            <td class="distance-high">+22.08%</td>
+                            <td class="distance-high">+14.60%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">CFG</td>
-                            <td class="price-cell">$65.93</td>
+                            <td class="price-cell">$65.78</td>
                             <td class="price-cell">$66.18</td>
-                            <td class="distance-high">-0.38%</td>
+                            <td class="distance-high">-0.60%</td>
+                            <td class="distance-high">+28.96%</td>
+                            <td class="distance-high">+40.33%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">AEE</td>
-                            <td class="price-cell">$103.88</td>
+                            <td class="price-cell">$103.96</td>
                             <td class="price-cell">$105.97</td>
-                            <td class="distance-high">-1.97%</td>
+                            <td class="distance-high">-1.89%</td>
+                            <td class="distance-high">+3.12%</td>
+                            <td class="distance-high">+3.38%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">PPG</td>
-                            <td class="price-cell">$119.76</td>
+                            <td class="price-cell">$119.91</td>
                             <td class="price-cell">$121.54</td>
-                            <td class="distance-high">-1.46%</td>
+                            <td class="distance-high">-1.34%</td>
+                            <td class="distance-high">+27.21%</td>
+                            <td class="distance-high">+14.70%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">HUBB</td>
-                            <td class="price-cell">$499.99</td>
+                            <td class="price-cell">$499.90</td>
                             <td class="price-cell">$513.59</td>
-                            <td class="distance-high">-2.65%</td>
+                            <td class="distance-high">-2.67%</td>
+                            <td class="distance-high">+7.26%</td>
+                            <td class="distance-high">+17.63%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">STLD</td>
-                            <td class="price-cell">$192.91</td>
+                            <td class="price-cell">$193.38</td>
                             <td class="price-cell">$195.18</td>
-                            <td class="distance-high">-1.16%</td>
+                            <td class="distance-high">-0.92%</td>
+                            <td class="distance-high">+24.35%</td>
+                            <td class="distance-high">+57.57%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">RF</td>
-                            <td class="price-cell">$29.70</td>
+                            <td class="price-cell">$29.64</td>
                             <td class="price-cell">$29.75</td>
-                            <td class="distance-high">-0.20%</td>
+                            <td class="distance-high">-0.38%</td>
+                            <td class="distance-high">+23.58%</td>
+                            <td class="distance-high">+20.13%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">CNP</td>
-                            <td class="price-cell">$40.01</td>
+                            <td class="price-cell">$40.04</td>
                             <td class="price-cell">$40.28</td>
-                            <td class="distance-high">-0.66%</td>
+                            <td class="distance-high">-0.57%</td>
+                            <td class="distance-high">+4.81%</td>
+                            <td class="distance-high">+4.03%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">STE</td>
-                            <td class="price-cell">$261.68</td>
+                            <td class="price-cell">$261.82</td>
                             <td class="price-cell">$269.44</td>
-                            <td class="distance-high">-2.88%</td>
+                            <td class="distance-high">-2.83%</td>
+                            <td class="distance-high">+10.32%</td>
+                            <td class="distance-high">+17.26%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">FE</td>
-                            <td class="price-cell">$47.38</td>
+                            <td class="price-cell">$46.99</td>
                             <td class="price-cell">$47.94</td>
-                            <td class="distance-high">-1.16%</td>
+                            <td class="distance-high">-1.99%</td>
+                            <td class="distance-high">+3.05%</td>
+                            <td class="distance-high">+10.15%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">WSM</td>
-                            <td class="price-cell">$216.01</td>
+                            <td class="price-cell">$216.28</td>
                             <td class="price-cell">$220.93</td>
-                            <td class="distance-high">-2.23%</td>
+                            <td class="distance-high">-2.10%</td>
+                            <td class="distance-high">+12.64%</td>
+                            <td class="distance-high">+6.84%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">CW</td>
-                            <td class="price-cell">$667.84</td>
+                            <td class="price-cell">$668.09</td>
                             <td class="price-cell">$682.15</td>
-                            <td class="distance-high">-2.10%</td>
+                            <td class="distance-high">-2.06%</td>
+                            <td class="distance-high">+11.07%</td>
+                            <td class="distance-high">+30.69%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">CINF</td>
-                            <td class="price-cell">$163.96</td>
+                            <td class="price-cell">$164.03</td>
                             <td class="price-cell">$168.98</td>
-                            <td class="distance-high">-2.97%</td>
+                            <td class="distance-high">-2.93%</td>
+                            <td class="distance-high">+7.31%</td>
+                            <td class="distance-high">+10.23%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">DVN</td>
-                            <td class="price-cell">$41.29</td>
-                            <td class="price-cell">$41.31</td>
-                            <td class="distance-high">-0.04%</td>
+                            <td class="price-cell">$41.43</td>
+                            <td class="price-cell">$41.44</td>
+                            <td class="distance-high">-0.02%</td>
+                            <td class="distance-high">+27.05%</td>
+                            <td class="distance-high">+29.95%</td>
                         </tr>
 
                         <tr>
@@ -981,293 +1156,377 @@
                             <td class="price-cell">$199.49</td>
                             <td class="price-cell">$202.79</td>
                             <td class="distance-high">-1.63%</td>
+                            <td class="distance-high">+31.64%</td>
+                            <td class="distance-high">+73.03%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">LUV</td>
-                            <td class="price-cell">$50.97</td>
+                            <td class="price-cell">$50.92</td>
                             <td class="price-cell">$51.19</td>
-                            <td class="distance-high">-0.44%</td>
+                            <td class="distance-high">-0.55%</td>
+                            <td class="distance-high">+68.05%</td>
+                            <td class="distance-high">+71.87%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">CASY</td>
-                            <td class="price-cell">$638.72</td>
+                            <td class="price-cell">$639.94</td>
                             <td class="price-cell">$647.39</td>
-                            <td class="distance-high">-1.34%</td>
+                            <td class="distance-high">-1.15%</td>
+                            <td class="distance-high">+24.70%</td>
+                            <td class="distance-high">+24.57%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">EIX</td>
-                            <td class="price-cell">$61.60</td>
+                            <td class="price-cell">$61.47</td>
                             <td class="price-cell">$63.19</td>
-                            <td class="distance-high">-2.52%</td>
+                            <td class="distance-high">-2.72%</td>
+                            <td class="distance-high">+14.68%</td>
+                            <td class="distance-high">+14.57%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">FTI</td>
-                            <td class="price-cell">$56.97</td>
-                            <td class="price-cell">$56.98</td>
-                            <td class="distance-high">-0.03%</td>
+                            <td class="price-cell">$57.09</td>
+                            <td class="price-cell">$57.15</td>
+                            <td class="distance-high">-0.10%</td>
+                            <td class="distance-high">+35.76%</td>
+                            <td class="distance-high">+61.28%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">PFG</td>
-                            <td class="price-cell">$95.56</td>
+                            <td class="price-cell">$95.36</td>
                             <td class="price-cell">$97.41</td>
-                            <td class="distance-high">-1.90%</td>
+                            <td class="distance-high">-2.10%</td>
+                            <td class="distance-high">+15.95%</td>
+                            <td class="distance-high">+27.70%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">CTRA</td>
-                            <td class="price-cell">$28.86</td>
+                            <td class="price-cell">$29.00</td>
                             <td class="price-cell">$29.06</td>
-                            <td class="distance-high">-0.67%</td>
+                            <td class="distance-high">-0.21%</td>
+                            <td class="distance-high">+19.91%</td>
+                            <td class="distance-high">+21.36%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">KEY</td>
-                            <td class="price-cell">$22.25</td>
+                            <td class="price-cell">$22.20</td>
                             <td class="price-cell">$22.45</td>
-                            <td class="distance-high">-0.89%</td>
+                            <td class="distance-high">-1.11%</td>
+                            <td class="distance-high">+28.01%</td>
+                            <td class="distance-high">+27.41%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">NI</td>
                             <td class="price-cell">$44.03</td>
                             <td class="price-cell">$44.95</td>
-                            <td class="distance-high">-2.05%</td>
+                            <td class="distance-high">-2.04%</td>
+                            <td class="distance-high">+3.42%</td>
+                            <td class="distance-high">+3.33%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">PKG</td>
-                            <td class="price-cell">$226.09</td>
+                            <td class="price-cell">$225.85</td>
                             <td class="price-cell">$231.12</td>
-                            <td class="distance-high">-2.18%</td>
+                            <td class="distance-high">-2.28%</td>
+                            <td class="distance-high">+16.18%</td>
+                            <td class="distance-high">+18.11%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">GPC</td>
-                            <td class="price-cell">$142.84</td>
+                            <td class="price-cell">$143.18</td>
                             <td class="price-cell">$145.20</td>
-                            <td class="distance-high">-1.63%</td>
+                            <td class="distance-high">-1.39%</td>
+                            <td class="distance-high">+16.76%</td>
+                            <td class="distance-high">+9.67%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">USFD</td>
-                            <td class="price-cell">$87.97</td>
+                            <td class="price-cell">$87.44</td>
                             <td class="price-cell">$88.32</td>
-                            <td class="distance-high">-0.39%</td>
+                            <td class="distance-high">-0.99%</td>
+                            <td class="distance-high">+18.64%</td>
+                            <td class="distance-high">+6.09%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">SNA</td>
-                            <td class="price-cell">$378.06</td>
+                            <td class="price-cell">$378.17</td>
                             <td class="price-cell">$380.10</td>
-                            <td class="distance-high">-0.54%</td>
+                            <td class="distance-high">-0.51%</td>
+                            <td class="distance-high">+12.79%</td>
+                            <td class="distance-high">+19.08%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">EXAS</td>
                             <td class="price-cell">$102.58</td>
                             <td class="price-cell">$102.70</td>
-                            <td class="distance-high">-0.11%</td>
+                            <td class="distance-high">-0.12%</td>
+                            <td class="distance-high">+53.15%</td>
+                            <td class="distance-high">+116.60%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">NVT</td>
-                            <td class="price-cell">$118.64</td>
+                            <td class="price-cell">$118.65</td>
                             <td class="price-cell">$120.45</td>
-                            <td class="distance-high">-1.50%</td>
+                            <td class="distance-high">-1.49%</td>
+                            <td class="distance-high">+5.80%</td>
+                            <td class="distance-high">+32.74%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">DD</td>
-                            <td class="price-cell">$45.43</td>
+                            <td class="price-cell">$45.31</td>
                             <td class="price-cell">$45.88</td>
-                            <td class="distance-high">-0.97%</td>
+                            <td class="distance-high">-1.23%</td>
+                            <td class="distance-high">+31.28%</td>
+                            <td class="distance-high">+50.72%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">XPO</td>
-                            <td class="price-cell">$167.55</td>
+                            <td class="price-cell">$167.78</td>
                             <td class="price-cell">$171.72</td>
-                            <td class="distance-high">-2.43%</td>
+                            <td class="distance-high">-2.29%</td>
+                            <td class="distance-high">+21.32%</td>
+                            <td class="distance-high">+39.33%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">TSN</td>
-                            <td class="price-cell">$64.57</td>
+                            <td class="price-cell">$64.78</td>
                             <td class="price-cell">$66.15</td>
-                            <td class="distance-high">-2.39%</td>
+                            <td class="distance-high">-2.07%</td>
+                            <td class="distance-high">+26.58%</td>
+                            <td class="distance-high">+20.35%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">L</td>
-                            <td class="price-cell">$106.81</td>
+                            <td class="price-cell">$106.84</td>
                             <td class="price-cell">$109.06</td>
-                            <td class="distance-high">-2.07%</td>
+                            <td class="distance-high">-2.04%</td>
+                            <td class="distance-high">+7.53%</td>
+                            <td class="distance-high">+14.65%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">ROL</td>
-                            <td class="price-cell">$62.87</td>
+                            <td class="price-cell">$62.97</td>
                             <td class="price-cell">$63.84</td>
-                            <td class="distance-high">-1.52%</td>
+                            <td class="distance-high">-1.35%</td>
+                            <td class="distance-high">+7.99%</td>
+                            <td class="distance-high">+9.00%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">RS</td>
-                            <td class="price-cell">$334.88</td>
+                            <td class="price-cell">$336.12</td>
                             <td class="price-cell">$344.45</td>
-                            <td class="distance-high">-2.78%</td>
+                            <td class="distance-high">-2.42%</td>
+                            <td class="distance-high">+20.01%</td>
+                            <td class="distance-high">+17.81%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">EVRG</td>
-                            <td class="price-cell">$77.69</td>
+                            <td class="price-cell">$77.58</td>
                             <td class="price-cell">$78.59</td>
-                            <td class="distance-high">-1.15%</td>
+                            <td class="distance-high">-1.29%</td>
+                            <td class="distance-high">+1.33%</td>
+                            <td class="distance-high">+8.20%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">HOLX</td>
                             <td class="price-cell">$74.75</td>
                             <td class="price-cell">$75.36</td>
-                            <td class="distance-high">-0.80%</td>
+                            <td class="distance-high">-0.81%</td>
+                            <td class="distance-high">+0.93%</td>
+                            <td class="distance-high">+10.22%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">JBHT</td>
                             <td class="price-cell">$219.42</td>
-                            <td class="price-cell">$219.54</td>
-                            <td class="distance-high">-0.05%</td>
+                            <td class="price-cell">$220.26</td>
+                            <td class="distance-high">-0.38%</td>
+                            <td class="distance-high">+29.60%</td>
+                            <td class="distance-high">+54.07%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">HII</td>
-                            <td class="price-cell">$426.50</td>
+                            <td class="price-cell">$427.11</td>
                             <td class="price-cell">$436.14</td>
-                            <td class="distance-high">-2.21%</td>
+                            <td class="distance-high">-2.07%</td>
+                            <td class="distance-high">+35.10%</td>
+                            <td class="distance-high">+59.13%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">RPRX</td>
-                            <td class="price-cell">$42.87</td>
+                            <td class="price-cell">$42.85</td>
                             <td class="price-cell">$43.06</td>
-                            <td class="distance-high">-0.45%</td>
+                            <td class="distance-high">-0.51%</td>
+                            <td class="distance-high">+15.51%</td>
+                            <td class="distance-high">+14.34%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">VTRS</td>
-                            <td class="price-cell">$13.69</td>
+                            <td class="price-cell">$13.70</td>
                             <td class="price-cell">$13.87</td>
-                            <td class="distance-high">-1.33%</td>
+                            <td class="distance-high">-1.23%</td>
+                            <td class="distance-high">+31.61%</td>
+                            <td class="distance-high">+56.08%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">SCCO</td>
-                            <td class="price-cell">$213.71</td>
+                            <td class="price-cell">$214.65</td>
                             <td class="price-cell">$218.81</td>
-                            <td class="distance-high">-2.33%</td>
+                            <td class="distance-high">-1.90%</td>
+                            <td class="distance-high">+57.48%</td>
+                            <td class="distance-high">+134.61%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">BALL</td>
-                            <td class="price-cell">$62.04</td>
+                            <td class="price-cell">$61.99</td>
                             <td class="price-cell">$62.76</td>
-                            <td class="distance-high">-1.15%</td>
+                            <td class="distance-high">-1.23%</td>
+                            <td class="distance-high">+32.12%</td>
+                            <td class="distance-high">+15.06%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">SUI</td>
-                            <td class="price-cell">$127.82</td>
+                            <td class="price-cell">$127.92</td>
                             <td class="price-cell">$130.41</td>
-                            <td class="distance-high">-1.99%</td>
+                            <td class="distance-high">-1.91%</td>
+                            <td class="distance-high">+3.59%</td>
+                            <td class="distance-high">+2.53%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">RBC</td>
-                            <td class="price-cell">$512.82</td>
+                            <td class="price-cell">$512.09</td>
                             <td class="price-cell">$517.92</td>
-                            <td class="distance-high">-0.98%</td>
+                            <td class="distance-high">-1.13%</td>
+                            <td class="distance-high">+19.54%</td>
+                            <td class="distance-high">+26.82%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">MTZ</td>
-                            <td class="price-cell">$246.04</td>
+                            <td class="price-cell">$246.74</td>
                             <td class="price-cell">$252.00</td>
-                            <td class="distance-high">-2.37%</td>
+                            <td class="distance-high">-2.09%</td>
+                            <td class="distance-high">+22.38%</td>
+                            <td class="distance-high">+38.85%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">BG</td>
-                            <td class="price-cell">$117.05</td>
+                            <td class="price-cell">$117.08</td>
                             <td class="price-cell">$119.58</td>
-                            <td class="distance-high">-2.12%</td>
+                            <td class="distance-high">-2.09%</td>
+                            <td class="distance-high">+25.44%</td>
+                            <td class="distance-high">+44.37%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">WPC</td>
-                            <td class="price-cell">$68.97</td>
+                            <td class="price-cell">$68.95</td>
                             <td class="price-cell">$70.28</td>
-                            <td class="distance-high">-1.86%</td>
+                            <td class="distance-high">-1.90%</td>
+                            <td class="distance-high">+6.10%</td>
+                            <td class="distance-high">+7.20%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">NDSN</td>
-                            <td class="price-cell">$276.02</td>
+                            <td class="price-cell">$276.27</td>
                             <td class="price-cell">$282.18</td>
-                            <td class="distance-high">-2.18%</td>
+                            <td class="distance-high">-2.09%</td>
+                            <td class="distance-high">+20.71%</td>
+                            <td class="distance-high">+30.04%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">GGG</td>
-                            <td class="price-cell">$88.61</td>
+                            <td class="price-cell">$88.76</td>
                             <td class="price-cell">$89.70</td>
-                            <td class="distance-high">-1.21%</td>
+                            <td class="distance-high">-1.05%</td>
+                            <td class="distance-high">+9.33%</td>
+                            <td class="distance-high">+6.53%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">AVY</td>
-                            <td class="price-cell">$186.24</td>
+                            <td class="price-cell">$186.46</td>
                             <td class="price-cell">$190.37</td>
-                            <td class="distance-high">-2.17%</td>
+                            <td class="distance-high">-2.05%</td>
+                            <td class="distance-high">+7.58%</td>
+                            <td class="distance-high">+12.11%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">LECO</td>
-                            <td class="price-cell">$270.47</td>
+                            <td class="price-cell">$270.19</td>
                             <td class="price-cell">$272.65</td>
-                            <td class="distance-high">-0.80%</td>
+                            <td class="distance-high">-0.90%</td>
+                            <td class="distance-high">+16.93%</td>
+                            <td class="distance-high">+10.73%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">WCC</td>
-                            <td class="price-cell">$302.07</td>
+                            <td class="price-cell">$300.38</td>
                             <td class="price-cell">$305.63</td>
-                            <td class="distance-high">-1.17%</td>
+                            <td class="distance-high">-1.72%</td>
+                            <td class="distance-high">+15.16%</td>
+                            <td class="distance-high">+45.83%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">PEN</td>
-                            <td class="price-cell">$356.56</td>
+                            <td class="price-cell">$356.65</td>
                             <td class="price-cell">$362.41</td>
-                            <td class="distance-high">-1.61%</td>
+                            <td class="distance-high">-1.59%</td>
+                            <td class="distance-high">+57.68%</td>
+                            <td class="distance-high">+48.54%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">RNR</td>
-                            <td class="price-cell">$286.62</td>
+                            <td class="price-cell">$286.55</td>
                             <td class="price-cell">$288.43</td>
-                            <td class="distance-high">-0.63%</td>
+                            <td class="distance-high">-0.65%</td>
+                            <td class="distance-high">+11.94%</td>
+                            <td class="distance-high">+19.44%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">CLH</td>
                             <td class="price-cell">$260.86</td>
                             <td class="price-cell">$268.22</td>
-                            <td class="distance-high">-2.74%</td>
+                            <td class="distance-high">-2.75%</td>
+                            <td class="distance-high">+24.98%</td>
+                            <td class="distance-high">+7.80%</td>
                         </tr>
 
                         <tr>
@@ -1275,237 +1534,305 @@
                             <td class="price-cell">$84.40</td>
                             <td class="price-cell">$86.15</td>
                             <td class="distance-high">-2.03%</td>
+                            <td class="distance-high">+14.60%</td>
+                            <td class="distance-high">+96.06%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">HST</td>
-                            <td class="price-cell">$18.85</td>
+                            <td class="price-cell">$18.83</td>
                             <td class="price-cell">$19.30</td>
-                            <td class="distance-high">-2.33%</td>
+                            <td class="distance-high">-2.46%</td>
+                            <td class="distance-high">+18.98%</td>
+                            <td class="distance-high">+26.07%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">CCK</td>
-                            <td class="price-cell">$111.61</td>
+                            <td class="price-cell">$111.59</td>
                             <td class="price-cell">$112.29</td>
-                            <td class="distance-high">-0.61%</td>
+                            <td class="distance-high">-0.63%</td>
+                            <td class="distance-high">+15.08%</td>
+                            <td class="distance-high">+14.37%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">DTM</td>
-                            <td class="price-cell">$127.27</td>
-                            <td class="price-cell">$127.27</td>
-                            <td class="distance-high">+0.00%</td>
+                            <td class="price-cell">$127.23</td>
+                            <td class="price-cell">$127.49</td>
+                            <td class="distance-high">-0.20%</td>
+                            <td class="distance-high">+14.09%</td>
+                            <td class="distance-high">+24.82%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">FHN</td>
-                            <td class="price-cell">$25.59</td>
+                            <td class="price-cell">$25.55</td>
                             <td class="price-cell">$25.68</td>
-                            <td class="distance-high">-0.33%</td>
+                            <td class="distance-high">-0.53%</td>
+                            <td class="distance-high">+19.79%</td>
+                            <td class="distance-high">+19.36%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">HAS</td>
-                            <td class="price-cell">$94.91</td>
+                            <td class="price-cell">$94.77</td>
                             <td class="price-cell">$95.88</td>
-                            <td class="distance-high">-1.01%</td>
+                            <td class="distance-high">-1.16%</td>
+                            <td class="distance-high">+26.10%</td>
+                            <td class="distance-high">+25.37%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">AIZ</td>
-                            <td class="price-cell">$241.69</td>
+                            <td class="price-cell">$241.60</td>
                             <td class="price-cell">$244.82</td>
-                            <td class="distance-high">-1.28%</td>
+                            <td class="distance-high">-1.32%</td>
+                            <td class="distance-high">+14.34%</td>
+                            <td class="distance-high">+28.92%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">GL</td>
-                            <td class="price-cell">$143.69</td>
+                            <td class="price-cell">$143.42</td>
                             <td class="price-cell">$147.26</td>
-                            <td class="distance-high">-2.42%</td>
+                            <td class="distance-high">-2.60%</td>
+                            <td class="distance-high">+10.00%</td>
+                            <td class="distance-high">+3.20%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">NYT</td>
-                            <td class="price-cell">$72.43</td>
+                            <td class="price-cell">$72.53</td>
                             <td class="price-cell">$74.04</td>
-                            <td class="distance-high">-2.17%</td>
+                            <td class="distance-high">-2.05%</td>
+                            <td class="distance-high">+27.43%</td>
+                            <td class="distance-high">+36.05%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">DCI</td>
-                            <td class="price-cell">$103.24</td>
+                            <td class="price-cell">$103.18</td>
                             <td class="price-cell">$103.78</td>
-                            <td class="distance-high">-0.52%</td>
+                            <td class="distance-high">-0.58%</td>
+                            <td class="distance-high">+22.52%</td>
+                            <td class="distance-high">+43.52%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">RRX</td>
-                            <td class="price-cell">$171.52</td>
+                            <td class="price-cell">$171.73</td>
                             <td class="price-cell">$176.51</td>
-                            <td class="distance-high">-2.83%</td>
+                            <td class="distance-high">-2.71%</td>
+                            <td class="distance-high">+25.71%</td>
+                            <td class="distance-high">+18.75%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">OVV</td>
-                            <td class="price-cell">$44.18</td>
+                            <td class="price-cell">$44.29</td>
                             <td class="price-cell">$44.61</td>
-                            <td class="distance-high">-0.96%</td>
+                            <td class="distance-high">-0.70%</td>
+                            <td class="distance-high">+18.88%</td>
+                            <td class="distance-high">+12.04%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">WMS</td>
-                            <td class="price-cell">$156.66</td>
+                            <td class="price-cell">$156.57</td>
                             <td class="price-cell">$161.19</td>
-                            <td class="distance-high">-2.81%</td>
+                            <td class="distance-high">-2.86%</td>
+                            <td class="distance-high">+13.76%</td>
+                            <td class="distance-high">+34.05%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">WBS</td>
-                            <td class="price-cell">$71.76</td>
+                            <td class="price-cell">$71.79</td>
                             <td class="price-cell">$73.47</td>
-                            <td class="distance-high">-2.33%</td>
+                            <td class="distance-high">-2.29%</td>
+                            <td class="distance-high">+27.07%</td>
+                            <td class="distance-high">+28.51%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">PNW</td>
-                            <td class="price-cell">$93.55</td>
+                            <td class="price-cell">$93.56</td>
                             <td class="price-cell">$94.08</td>
-                            <td class="distance-high">-0.56%</td>
+                            <td class="distance-high">-0.55%</td>
+                            <td class="distance-high">+5.62%</td>
+                            <td class="distance-high">+3.37%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">PR</td>
-                            <td class="price-cell">$16.06</td>
+                            <td class="price-cell">$16.08</td>
                             <td class="price-cell">$16.25</td>
-                            <td class="distance-high">-1.20%</td>
+                            <td class="distance-high">-1.11%</td>
+                            <td class="distance-high">+28.86%</td>
+                            <td class="distance-high">+19.88%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">FLS</td>
-                            <td class="price-cell">$79.17</td>
+                            <td class="price-cell">$79.03</td>
                             <td class="price-cell">$80.89</td>
-                            <td class="distance-high">-2.13%</td>
+                            <td class="distance-high">-2.30%</td>
+                            <td class="distance-high">+10.32%</td>
+                            <td class="distance-high">+46.79%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">BWA</td>
-                            <td class="price-cell">$48.52</td>
+                            <td class="price-cell">$48.48</td>
                             <td class="price-cell">$49.21</td>
-                            <td class="distance-high">-1.40%</td>
+                            <td class="distance-high">-1.48%</td>
+                            <td class="distance-high">+11.05%</td>
+                            <td class="distance-high">+29.00%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">AES</td>
-                            <td class="price-cell">$15.89</td>
+                            <td class="price-cell">$15.92</td>
                             <td class="price-cell">$16.19</td>
-                            <td class="distance-high">-1.88%</td>
+                            <td class="distance-high">-1.67%</td>
+                            <td class="distance-high">+18.27%</td>
+                            <td class="distance-high">+28.15%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">SSB</td>
-                            <td class="price-cell">$103.78</td>
+                            <td class="price-cell">$103.44</td>
                             <td class="price-cell">$105.56</td>
-                            <td class="distance-high">-1.69%</td>
+                            <td class="distance-high">-2.01%</td>
+                            <td class="distance-high">+17.23%</td>
+                            <td class="distance-high">+11.39%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">SOLS</td>
-                            <td class="price-cell">$65.70</td>
+                            <td class="price-cell">$65.69</td>
                             <td class="price-cell">$66.84</td>
                             <td class="distance-high">-1.71%</td>
+                            <td class="distance-high">+49.27%</td>
+                            <td class="">N/A</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">WTFC</td>
-                            <td class="price-cell">$154.27</td>
+                            <td class="price-cell">$154.49</td>
                             <td class="price-cell">$155.99</td>
-                            <td class="distance-high">-1.10%</td>
+                            <td class="distance-high">-0.96%</td>
+                            <td class="distance-high">+20.41%</td>
+                            <td class="distance-high">+23.76%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">OSK</td>
-                            <td class="price-cell">$156.49</td>
+                            <td class="price-cell">$157.04</td>
                             <td class="price-cell">$158.53</td>
-                            <td class="distance-high">-1.29%</td>
+                            <td class="distance-high">-0.94%</td>
+                            <td class="distance-high">+29.97%</td>
+                            <td class="distance-high">+13.42%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">WAL</td>
-                            <td class="price-cell">$90.65</td>
+                            <td class="price-cell">$90.64</td>
                             <td class="price-cell">$92.80</td>
-                            <td class="distance-high">-2.32%</td>
+                            <td class="distance-high">-2.34%</td>
+                            <td class="distance-high">+18.46%</td>
+                            <td class="distance-high">+16.14%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">BPOP</td>
-                            <td class="price-cell">$141.26</td>
-                            <td class="price-cell">$141.29</td>
-                            <td class="distance-high">-0.02%</td>
+                            <td class="price-cell">$140.29</td>
+                            <td class="price-cell">$141.49</td>
+                            <td class="distance-high">-0.85%</td>
+                            <td class="distance-high">+25.73%</td>
+                            <td class="distance-high">+23.06%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">TTC</td>
-                            <td class="price-cell">$94.33</td>
+                            <td class="price-cell">$94.49</td>
                             <td class="price-cell">$95.37</td>
-                            <td class="distance-high">-1.09%</td>
+                            <td class="distance-high">-0.92%</td>
+                            <td class="distance-high">+27.97%</td>
+                            <td class="distance-high">+28.00%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">KNX</td>
-                            <td class="price-cell">$59.95</td>
+                            <td class="price-cell">$59.69</td>
                             <td class="price-cell">$60.99</td>
-                            <td class="distance-high">-1.71%</td>
+                            <td class="distance-high">-2.14%</td>
+                            <td class="distance-high">+36.51%</td>
+                            <td class="distance-high">+41.92%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">ZION</td>
-                            <td class="price-cell">$61.87</td>
+                            <td class="price-cell">$61.76</td>
                             <td class="price-cell">$62.47</td>
-                            <td class="distance-high">-0.96%</td>
+                            <td class="distance-high">-1.14%</td>
+                            <td class="distance-high">+20.33%</td>
+                            <td class="distance-high">+19.72%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">VMI</td>
-                            <td class="price-cell">$454.91</td>
+                            <td class="price-cell">$455.13</td>
                             <td class="price-cell">$463.19</td>
-                            <td class="distance-high">-1.79%</td>
+                            <td class="distance-high">-1.74%</td>
+                            <td class="distance-high">+11.01%</td>
+                            <td class="distance-high">+24.32%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">UGI</td>
-                            <td class="price-cell">$40.65</td>
+                            <td class="price-cell">$40.55</td>
                             <td class="price-cell">$41.34</td>
-                            <td class="distance-high">-1.67%</td>
+                            <td class="distance-high">-1.91%</td>
+                            <td class="distance-high">+22.32%</td>
+                            <td class="distance-high">+13.89%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">COLB</td>
-                            <td class="price-cell">$30.26</td>
+                            <td class="price-cell">$30.22</td>
                             <td class="price-cell">$31.11</td>
-                            <td class="distance-high">-2.72%</td>
+                            <td class="distance-high">-2.86%</td>
+                            <td class="distance-high">+13.74%</td>
+                            <td class="distance-high">+28.39%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">AOS</td>
-                            <td class="price-cell">$76.36</td>
+                            <td class="price-cell">$76.28</td>
                             <td class="price-cell">$77.18</td>
-                            <td class="distance-high">-1.06%</td>
+                            <td class="distance-high">-1.17%</td>
+                            <td class="distance-high">+16.75%</td>
+                            <td class="distance-high">+9.60%</td>
                         </tr>
 
                         <tr>
-                            <td class="ticker-cell">R</td>
-                            <td class="price-cell">$203.09</td>
-                            <td class="price-cell">$209.23</td>
-                            <td class="distance-high">-2.94%</td>
+                            <td class="ticker-cell">BEN</td>
+                            <td class="price-cell">$26.67</td>
+                            <td class="price-cell">$27.46</td>
+                            <td class="distance-high">-2.90%</td>
+                            <td class="distance-high">+18.35%</td>
+                            <td class="distance-high">+8.54%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">LFUS</td>
-                            <td class="price-cell">$328.54</td>
+                            <td class="price-cell">$328.27</td>
                             <td class="price-cell">$336.13</td>
-                            <td class="distance-high">-2.26%</td>
+                            <td class="distance-high">-2.34%</td>
+                            <td class="distance-high">+32.09%</td>
+                            <td class="distance-high">+31.28%</td>
                         </tr>
 
                         <tr>
@@ -1513,97 +1840,107 @@
                             <td class="price-cell">$41.90</td>
                             <td class="price-cell">$42.36</td>
                             <td class="distance-high">-1.09%</td>
+                            <td class="distance-high">+3.96%</td>
+                            <td class="distance-high">+2.77%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">DAR</td>
-                            <td class="price-cell">$47.56</td>
+                            <td class="price-cell">$47.62</td>
                             <td class="price-cell">$48.10</td>
-                            <td class="distance-high">-1.12%</td>
-                        </tr>
-
-                        <tr>
-                            <td class="ticker-cell">FR</td>
-                            <td class="price-cell">$58.44</td>
-                            <td class="price-cell">$60.20</td>
-                            <td class="distance-high">-2.92%</td>
+                            <td class="distance-high">-0.99%</td>
+                            <td class="distance-high">+45.23%</td>
+                            <td class="distance-high">+50.17%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">ARW</td>
-                            <td class="price-cell">$134.02</td>
+                            <td class="price-cell">$134.39</td>
                             <td class="price-cell">$136.29</td>
-                            <td class="distance-high">-1.67%</td>
+                            <td class="distance-high">-1.40%</td>
+                            <td class="distance-high">+20.58%</td>
+                            <td class="distance-high">+14.21%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">IDA</td>
-                            <td class="price-cell">$134.16</td>
+                            <td class="price-cell">$134.05</td>
                             <td class="price-cell">$137.09</td>
-                            <td class="distance-high">-2.14%</td>
-                        </tr>
-
-                        <tr>
-                            <td class="ticker-cell">STAG</td>
-                            <td class="price-cell">$38.29</td>
-                            <td class="price-cell">$39.47</td>
-                            <td class="distance-high">-2.99%</td>
+                            <td class="distance-high">-2.22%</td>
+                            <td class="distance-high">+4.12%</td>
+                            <td class="distance-high">+7.68%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">MSA</td>
-                            <td class="price-cell">$183.28</td>
+                            <td class="price-cell">$183.29</td>
                             <td class="price-cell">$185.54</td>
-                            <td class="distance-high">-1.22%</td>
+                            <td class="distance-high">-1.21%</td>
+                            <td class="distance-high">+17.90%</td>
+                            <td class="distance-high">+2.52%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">NOV</td>
-                            <td class="price-cell">$18.68</td>
+                            <td class="price-cell">$18.74</td>
                             <td class="price-cell">$19.22</td>
-                            <td class="distance-high">-2.78%</td>
+                            <td class="distance-high">-2.52%</td>
+                            <td class="distance-high">+25.06%</td>
+                            <td class="distance-high">+54.77%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">WFRD</td>
-                            <td class="price-cell">$95.12</td>
+                            <td class="price-cell">$95.69</td>
                             <td class="price-cell">$96.15</td>
-                            <td class="distance-high">-1.07%</td>
+                            <td class="distance-high">-0.47%</td>
+                            <td class="distance-high">+27.62%</td>
+                            <td class="distance-high">+67.44%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">AL</td>
-                            <td class="price-cell">$64.63</td>
+                            <td class="price-cell">$64.62</td>
                             <td class="price-cell">$64.70</td>
-                            <td class="distance-high">-0.11%</td>
+                            <td class="distance-high">-0.12%</td>
+                            <td class="distance-high">+1.55%</td>
+                            <td class="distance-high">+18.50%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">GXO</td>
-                            <td class="price-cell">$57.09</td>
+                            <td class="price-cell">$57.18</td>
                             <td class="price-cell">$58.38</td>
-                            <td class="distance-high">-2.21%</td>
+                            <td class="distance-high">-2.06%</td>
+                            <td class="distance-high">+3.29%</td>
+                            <td class="distance-high">+16.74%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">GAP</td>
-                            <td class="price-cell">$28.41</td>
+                            <td class="price-cell">$28.47</td>
                             <td class="price-cell">$29.10</td>
-                            <td class="distance-high">-2.39%</td>
+                            <td class="distance-high">-2.16%</td>
+                            <td class="distance-high">+25.58%</td>
+                            <td class="distance-high">+48.13%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">FNB</td>
-                            <td class="price-cell">$18.20</td>
+                            <td class="price-cell">$18.17</td>
                             <td class="price-cell">$18.30</td>
-                            <td class="distance-high">-0.55%</td>
+                            <td class="distance-high">-0.71%</td>
+                            <td class="distance-high">+16.35%</td>
+                            <td class="distance-high">+22.16%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">TIGO</td>
-                            <td class="price-cell">$62.35</td>
+                            <td class="price-cell">$62.27</td>
                             <td class="price-cell">$62.74</td>
-                            <td class="distance-high">-0.62%</td>
+                            <td class="distance-high">-0.75%</td>
+                            <td class="distance-high">+36.17%</td>
+                            <td class="distance-high">+63.71%</td>
                         </tr>
 
                         <tr>
@@ -1611,111 +1948,134 @@
                             <td class="price-cell">$48.15</td>
                             <td class="price-cell">$48.97</td>
                             <td class="distance-high">-1.69%</td>
+                            <td class="distance-high">+11.87%</td>
+                            <td class="distance-high">+14.09%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">RAL</td>
-                            <td class="price-cell">$54.11</td>
+                            <td class="price-cell">$54.25</td>
                             <td class="price-cell">$55.25</td>
-                            <td class="distance-high">-2.06%</td>
+                            <td class="distance-high">-1.81%</td>
+                            <td class="distance-high">+22.64%</td>
+                            <td class="distance-high">+24.66%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">TKR</td>
-                            <td class="price-cell">$95.52</td>
+                            <td class="price-cell">$95.50</td>
                             <td class="price-cell">$97.32</td>
-                            <td class="distance-high">-1.84%</td>
+                            <td class="distance-high">-1.87%</td>
+                            <td class="distance-high">+23.05%</td>
+                            <td class="distance-high">+29.08%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">THO</td>
-                            <td class="price-cell">$118.44</td>
+                            <td class="price-cell">$118.39</td>
                             <td class="price-cell">$119.27</td>
-                            <td class="distance-high">-0.70%</td>
+                            <td class="distance-high">-0.73%</td>
+                            <td class="distance-high">+14.08%</td>
+                            <td class="distance-high">+27.01%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">LSTR</td>
-                            <td class="price-cell">$158.14</td>
+                            <td class="price-cell">$158.31</td>
                             <td class="price-cell">$162.47</td>
-                            <td class="distance-high">-2.67%</td>
+                            <td class="distance-high">-2.56%</td>
+                            <td class="distance-high">+27.93%</td>
+                            <td class="distance-high">+23.70%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">AVT</td>
-                            <td class="price-cell">$63.17</td>
+                            <td class="price-cell">$63.13</td>
                             <td class="price-cell">$64.22</td>
-                            <td class="distance-high">-1.64%</td>
-                        </tr>
-
-                        <tr>
-                            <td class="ticker-cell">ST</td>
-                            <td class="price-cell">$35.19</td>
-                            <td class="price-cell">$36.25</td>
-                            <td class="distance-high">-2.94%</td>
+                            <td class="distance-high">-1.69%</td>
+                            <td class="distance-high">+32.08%</td>
+                            <td class="distance-high">+23.37%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">SON</td>
-                            <td class="price-cell">$49.05</td>
+                            <td class="price-cell">$48.94</td>
                             <td class="price-cell">$49.64</td>
-                            <td class="distance-high">-1.19%</td>
+                            <td class="distance-high">-1.40%</td>
+                            <td class="distance-high">+24.32%</td>
+                            <td class="distance-high">+11.84%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">MDU</td>
                             <td class="price-cell">$20.92</td>
                             <td class="price-cell">$21.34</td>
-                            <td class="distance-high">-1.95%</td>
+                            <td class="distance-high">-1.93%</td>
+                            <td class="distance-high">+8.63%</td>
+                            <td class="distance-high">+20.09%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">MSM</td>
-                            <td class="price-cell">$90.71</td>
+                            <td class="price-cell">$90.68</td>
                             <td class="price-cell">$92.43</td>
-                            <td class="distance-high">-1.86%</td>
+                            <td class="distance-high">-1.88%</td>
+                            <td class="distance-high">+9.13%</td>
+                            <td class="distance-high">+7.46%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">CWEN</td>
-                            <td class="price-cell">$36.87</td>
+                            <td class="price-cell">$36.83</td>
                             <td class="price-cell">$37.40</td>
-                            <td class="distance-high">-1.42%</td>
+                            <td class="distance-high">-1.51%</td>
+                            <td class="distance-high">+14.76%</td>
+                            <td class="distance-high">+19.78%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">CWEN-A</td>
-                            <td class="price-cell">$34.51</td>
+                            <td class="price-cell">$34.54</td>
                             <td class="price-cell">$35.03</td>
-                            <td class="distance-high">-1.50%</td>
+                            <td class="distance-high">-1.41%</td>
+                            <td class="distance-high">+14.20%</td>
+                            <td class="distance-high">+19.43%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">SEB</td>
-                            <td class="price-cell">$5362.00</td>
-                            <td class="price-cell">$5367.00</td>
-                            <td class="distance-high">-0.09%</td>
+                            <td class="price-cell">$5356.00</td>
+                            <td class="price-cell">$5374.98</td>
+                            <td class="distance-high">-0.35%</td>
+                            <td class="distance-high">+48.93%</td>
+                            <td class="distance-high">+53.97%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">CNA</td>
-                            <td class="price-cell">$48.99</td>
+                            <td class="price-cell">$48.97</td>
                             <td class="price-cell">$49.87</td>
-                            <td class="distance-high">-1.76%</td>
+                            <td class="distance-high">-1.80%</td>
+                            <td class="distance-high">+12.28%</td>
+                            <td class="distance-high">+7.22%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">TFSL</td>
-                            <td class="price-cell">$14.32</td>
+                            <td class="price-cell">$14.31</td>
                             <td class="price-cell">$14.71</td>
-                            <td class="distance-high">-2.62%</td>
+                            <td class="distance-high">-2.75%</td>
+                            <td class="distance-high">+6.74%</td>
+                            <td class="distance-high">+15.89%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">GLIBA</td>
-                            <td class="price-cell">$38.49</td>
+                            <td class="price-cell">$38.28</td>
                             <td class="price-cell">$39.24</td>
-                            <td class="distance-high">-1.91%</td>
+                            <td class="distance-high">-2.43%</td>
+                            <td class="distance-high">+4.38%</td>
+                            <td class="distance-high">+16.76%</td>
                         </tr>
 
                     </tbody>
@@ -1725,7 +2085,7 @@
             <div class="category">
                 <h3>
                     <span>52-Week Lows</span>
-                    <span class="badge low">85 stocks</span>
+                    <span class="badge low">84 stocks</span>
                 </h3>
                 <input type="text" class="search-box" placeholder="Search tickers..." 
                        onkeyup="filterTable(this, 'US-lows-table')">
@@ -1736,596 +2096,757 @@
                             <th class="low sortable" onclick="sortTable('US-lows-table', 1)">Current Price</th>
                             <th class="low sortable" onclick="sortTable('US-lows-table', 2)">52W Low</th>
                             <th class="low sortable" onclick="sortTable('US-lows-table', 3)">Distance</th>
+                            <th class="low sortable" onclick="sortTable('US-lows-table', 4)">3M Return</th>
+                            <th class="low sortable" onclick="sortTable('US-lows-table', 5)">6M Return</th>
                         </tr>
                     </thead>
                     <tbody>
 
                         <tr>
                             <td class="ticker-cell">NFLX</td>
-                            <td class="price-cell">$79.85</td>
-                            <td class="price-cell">$79.79</td>
-                            <td class="distance-low">+0.08%</td>
+                            <td class="price-cell">$79.65</td>
+                            <td class="price-cell">$79.63</td>
+                            <td class="distance-low">+0.03%</td>
+                            <td class="distance-low">-27.59%</td>
+                            <td class="distance-low">-30.61%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">CRM</td>
-                            <td class="price-cell">$193.74</td>
+                            <td class="price-cell">$195.74</td>
                             <td class="price-cell">$193.12</td>
-                            <td class="distance-low">+0.32%</td>
-                        </tr>
-
-                        <tr>
-                            <td class="ticker-cell">ABT</td>
-                            <td class="price-cell">$108.36</td>
-                            <td class="price-cell">$105.27</td>
-                            <td class="distance-low">+2.94%</td>
+                            <td class="distance-low">+1.36%</td>
+                            <td class="distance-low">-24.98%</td>
+                            <td class="distance-low">-20.64%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">INTU</td>
-                            <td class="price-cell">$433.38</td>
+                            <td class="price-cell">$432.15</td>
                             <td class="price-cell">$427.32</td>
-                            <td class="distance-low">+1.42%</td>
+                            <td class="distance-low">+1.13%</td>
+                            <td class="distance-low">-35.97%</td>
+                            <td class="distance-low">-43.62%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">ADBE</td>
-                            <td class="price-cell">$272.64</td>
+                            <td class="price-cell">$272.48</td>
                             <td class="price-cell">$271.02</td>
-                            <td class="distance-low">+0.60%</td>
+                            <td class="distance-low">+0.54%</td>
+                            <td class="distance-low">-19.26%</td>
+                            <td class="distance-low">-19.56%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">NOW</td>
-                            <td class="price-cell">$108.90</td>
+                            <td class="price-cell">$108.96</td>
                             <td class="price-cell">$108.10</td>
-                            <td class="distance-low">+0.74%</td>
+                            <td class="distance-low">+0.80%</td>
+                            <td class="distance-low">-40.38%</td>
+                            <td class="distance-low">-39.81%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">ADP</td>
-                            <td class="price-cell">$236.60</td>
-                            <td class="price-cell">$235.94</td>
-                            <td class="distance-low">+0.28%</td>
+                            <td class="price-cell">$235.90</td>
+                            <td class="price-cell">$235.90</td>
+                            <td class="distance-low">+0.00%</td>
+                            <td class="distance-low">-7.68%</td>
+                            <td class="distance-low">-20.30%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">SPOT</td>
-                            <td class="price-cell">$468.17</td>
+                            <td class="price-cell">$467.22</td>
                             <td class="price-cell">$464.24</td>
-                            <td class="distance-low">+0.85%</td>
+                            <td class="distance-low">+0.64%</td>
+                            <td class="distance-low">-27.46%</td>
+                            <td class="distance-low">-27.79%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">PYPL</td>
-                            <td class="price-cell">$41.95</td>
+                            <td class="price-cell">$42.09</td>
                             <td class="price-cell">$41.43</td>
-                            <td class="distance-low">+1.26%</td>
+                            <td class="distance-low">+1.59%</td>
+                            <td class="distance-low">-38.27%</td>
+                            <td class="distance-low">-37.80%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">ROP</td>
-                            <td class="price-cell">$345.00</td>
+                            <td class="price-cell">$345.46</td>
                             <td class="price-cell">$343.92</td>
-                            <td class="distance-low">+0.31%</td>
+                            <td class="distance-low">+0.45%</td>
+                            <td class="distance-low">-22.82%</td>
+                            <td class="distance-low">-35.54%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">WDAY</td>
-                            <td class="price-cell">$159.86</td>
+                            <td class="price-cell">$160.02</td>
                             <td class="price-cell">$157.50</td>
-                            <td class="distance-low">+1.50%</td>
+                            <td class="distance-low">+1.60%</td>
+                            <td class="distance-low">-32.67%</td>
+                            <td class="distance-low">-28.87%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">MSTR</td>
-                            <td class="price-cell">$129.10</td>
+                            <td class="price-cell">$129.51</td>
                             <td class="price-cell">$126.74</td>
-                            <td class="distance-low">+1.86%</td>
+                            <td class="distance-low">+2.19%</td>
+                            <td class="distance-low">-51.07%</td>
+                            <td class="distance-low">-65.51%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">CCI</td>
-                            <td class="price-cell">$84.44</td>
+                            <td class="price-cell">$84.51</td>
                             <td class="price-cell">$83.21</td>
-                            <td class="distance-low">+1.48%</td>
+                            <td class="distance-low">+1.56%</td>
+                            <td class="distance-low">-4.49%</td>
+                            <td class="distance-low">-17.60%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">AXON</td>
-                            <td class="price-cell">$438.26</td>
+                            <td class="price-cell">$438.91</td>
                             <td class="price-cell">$434.62</td>
-                            <td class="distance-low">+0.84%</td>
+                            <td class="distance-low">+0.99%</td>
+                            <td class="distance-low">-39.39%</td>
+                            <td class="distance-low">-49.38%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">FISV</td>
-                            <td class="price-cell">$58.24</td>
+                            <td class="price-cell">$58.12</td>
                             <td class="price-cell">$57.89</td>
-                            <td class="distance-low">+0.60%</td>
+                            <td class="distance-low">+0.41%</td>
+                            <td class="distance-low">-12.84%</td>
+                            <td class="distance-low">-57.31%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">FICO</td>
-                            <td class="price-cell">$1336.87</td>
+                            <td class="price-cell">$1335.49</td>
                             <td class="price-cell">$1300.00</td>
-                            <td class="distance-low">+2.84%</td>
+                            <td class="distance-low">+2.73%</td>
+                            <td class="distance-low">-19.09%</td>
+                            <td class="distance-low">-0.57%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">PAYX</td>
-                            <td class="price-cell">$97.85</td>
+                            <td class="price-cell">$97.69</td>
                             <td class="price-cell">$97.09</td>
-                            <td class="distance-low">+0.78%</td>
+                            <td class="distance-low">+0.62%</td>
+                            <td class="distance-low">-13.42%</td>
+                            <td class="distance-low">-28.39%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">VEEV</td>
-                            <td class="price-cell">$189.32</td>
+                            <td class="price-cell">$189.35</td>
                             <td class="price-cell">$186.40</td>
-                            <td class="distance-low">+1.57%</td>
+                            <td class="distance-low">+1.58%</td>
+                            <td class="distance-low">-35.31%</td>
+                            <td class="distance-low">-32.73%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">VRSK</td>
-                            <td class="price-cell">$192.79</td>
+                            <td class="price-cell">$193.72</td>
                             <td class="price-cell">$191.12</td>
-                            <td class="distance-low">+0.87%</td>
+                            <td class="distance-low">+1.36%</td>
+                            <td class="distance-low">-9.88%</td>
+                            <td class="distance-low">-26.54%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">FIS</td>
-                            <td class="price-cell">$51.28</td>
+                            <td class="price-cell">$51.16</td>
                             <td class="price-cell">$51.13</td>
-                            <td class="distance-low">+0.29%</td>
+                            <td class="distance-low">+0.06%</td>
+                            <td class="distance-low">-17.25%</td>
+                            <td class="distance-low">-28.31%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">FLUT</td>
-                            <td class="price-cell">$151.85</td>
+                            <td class="price-cell">$152.35</td>
                             <td class="price-cell">$150.76</td>
-                            <td class="distance-low">+0.72%</td>
+                            <td class="distance-low">+1.05%</td>
+                            <td class="distance-low">-34.06%</td>
+                            <td class="distance-low">-49.97%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">CSGP</td>
-                            <td class="price-cell">$53.17</td>
+                            <td class="price-cell">$52.90</td>
                             <td class="price-cell">$52.50</td>
-                            <td class="distance-low">+1.27%</td>
+                            <td class="distance-low">+0.75%</td>
+                            <td class="distance-low">-23.76%</td>
+                            <td class="distance-low">-45.22%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">EFX</td>
-                            <td class="price-cell">$176.47</td>
+                            <td class="price-cell">$176.07</td>
                             <td class="price-cell">$173.86</td>
-                            <td class="distance-low">+1.50%</td>
+                            <td class="distance-low">+1.27%</td>
+                            <td class="distance-low">-15.90%</td>
+                            <td class="distance-low">-26.36%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">OMC</td>
-                            <td class="price-cell">$68.63</td>
+                            <td class="price-cell">$68.74</td>
                             <td class="price-cell">$67.10</td>
-                            <td class="distance-low">+2.29%</td>
+                            <td class="distance-low">+2.45%</td>
+                            <td class="distance-low">-4.94%</td>
+                            <td class="distance-low">-3.53%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">BR</td>
-                            <td class="price-cell">$185.13</td>
+                            <td class="price-cell">$185.71</td>
                             <td class="price-cell">$183.30</td>
-                            <td class="distance-low">+1.00%</td>
+                            <td class="distance-low">+1.31%</td>
+                            <td class="distance-low">-15.68%</td>
+                            <td class="distance-low">-29.44%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">BRO</td>
-                            <td class="price-cell">$71.49</td>
+                            <td class="price-cell">$71.59</td>
                             <td class="price-cell">$70.45</td>
-                            <td class="distance-low">+1.48%</td>
+                            <td class="distance-low">+1.62%</td>
+                            <td class="distance-low">-7.81%</td>
+                            <td class="distance-low">-21.62%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">SBAC</td>
-                            <td class="price-cell">$178.57</td>
+                            <td class="price-cell">$178.81</td>
                             <td class="price-cell">$177.73</td>
-                            <td class="distance-low">+0.47%</td>
+                            <td class="distance-low">+0.61%</td>
+                            <td class="distance-low">-7.09%</td>
+                            <td class="distance-low">-17.55%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">ZBH</td>
-                            <td class="price-cell">$86.32</td>
+                            <td class="price-cell">$86.19</td>
                             <td class="price-cell">$84.59</td>
-                            <td class="distance-low">+2.05%</td>
+                            <td class="distance-low">+1.90%</td>
+                            <td class="distance-low">-13.47%</td>
+                            <td class="distance-low">-5.88%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">CDW</td>
-                            <td class="price-cell">$125.49</td>
+                            <td class="price-cell">$125.25</td>
                             <td class="price-cell">$123.09</td>
-                            <td class="distance-low">+1.95%</td>
+                            <td class="distance-low">+1.75%</td>
+                            <td class="distance-low">-18.74%</td>
+                            <td class="distance-low">-23.58%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">INVH</td>
-                            <td class="price-cell">$26.01</td>
+                            <td class="price-cell">$26.00</td>
                             <td class="price-cell">$25.29</td>
-                            <td class="distance-low">+2.85%</td>
-                        </tr>
-
-                        <tr>
-                            <td class="ticker-cell">TRU</td>
-                            <td class="price-cell">$68.08</td>
-                            <td class="price-cell">$66.11</td>
-                            <td class="distance-low">+3.00%</td>
+                            <td class="distance-low">+2.83%</td>
+                            <td class="distance-low">-7.29%</td>
+                            <td class="distance-low">-12.81%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">TOST</td>
-                            <td class="price-cell">$28.52</td>
+                            <td class="price-cell">$28.47</td>
                             <td class="price-cell">$28.12</td>
-                            <td class="distance-low">+1.42%</td>
+                            <td class="distance-low">+1.24%</td>
+                            <td class="distance-low">-20.30%</td>
+                            <td class="distance-low">-40.33%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">GDDY</td>
-                            <td class="price-cell">$93.81</td>
+                            <td class="price-cell">$93.77</td>
                             <td class="price-cell">$93.28</td>
-                            <td class="distance-low">+0.57%</td>
+                            <td class="distance-low">+0.53%</td>
+                            <td class="distance-low">-30.55%</td>
+                            <td class="distance-low">-38.88%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">TTD</td>
-                            <td class="price-cell">$26.91</td>
+                            <td class="price-cell">$26.92</td>
                             <td class="price-cell">$26.57</td>
-                            <td class="distance-low">+1.26%</td>
+                            <td class="distance-low">+1.30%</td>
+                            <td class="distance-low">-45.21%</td>
+                            <td class="distance-low">-69.31%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">DKNG</td>
-                            <td class="price-cell">$26.12</td>
+                            <td class="price-cell">$26.23</td>
                             <td class="price-cell">$25.73</td>
-                            <td class="distance-low">+1.55%</td>
+                            <td class="distance-low">+1.94%</td>
+                            <td class="distance-low">-14.21%</td>
+                            <td class="distance-low">-41.64%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">PINS</td>
-                            <td class="price-cell">$20.64</td>
+                            <td class="price-cell">$20.68</td>
                             <td class="price-cell">$20.11</td>
-                            <td class="distance-low">+2.64%</td>
+                            <td class="distance-low">+2.83%</td>
+                            <td class="distance-low">-38.63%</td>
+                            <td class="distance-low">-46.81%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">GEN</td>
-                            <td class="price-cell">$22.53</td>
+                            <td class="price-cell">$22.50</td>
                             <td class="price-cell">$22.43</td>
-                            <td class="distance-low">+0.45%</td>
+                            <td class="distance-low">+0.27%</td>
+                            <td class="distance-low">-14.00%</td>
+                            <td class="distance-low">-20.61%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">TW</td>
-                            <td class="price-cell">$99.50</td>
+                            <td class="price-cell">$99.30</td>
                             <td class="price-cell">$98.41</td>
-                            <td class="distance-low">+1.10%</td>
+                            <td class="distance-low">+0.90%</td>
+                            <td class="distance-low">-5.62%</td>
+                            <td class="distance-low">-29.20%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">DT</td>
-                            <td class="price-cell">$34.48</td>
+                            <td class="price-cell">$34.44</td>
                             <td class="price-cell">$33.85</td>
-                            <td class="distance-low">+1.86%</td>
+                            <td class="distance-low">+1.74%</td>
+                            <td class="distance-low">-31.77%</td>
+                            <td class="distance-low">-31.84%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">DOCU</td>
-                            <td class="price-cell">$45.99</td>
+                            <td class="price-cell">$45.92</td>
                             <td class="price-cell">$45.26</td>
-                            <td class="distance-low">+1.61%</td>
+                            <td class="distance-low">+1.47%</td>
+                            <td class="distance-low">-37.12%</td>
+                            <td class="distance-low">-37.80%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">NTNX</td>
-                            <td class="price-cell">$36.66</td>
+                            <td class="price-cell">$36.67</td>
                             <td class="price-cell">$36.43</td>
-                            <td class="distance-low">+0.63%</td>
+                            <td class="distance-low">+0.66%</td>
+                            <td class="distance-low">-48.47%</td>
+                            <td class="distance-low">-49.97%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">FDS</td>
-                            <td class="price-cell">$224.79</td>
+                            <td class="price-cell">$224.08</td>
                             <td class="price-cell">$220.74</td>
-                            <td class="distance-low">+1.83%</td>
+                            <td class="distance-low">+1.51%</td>
+                            <td class="distance-low">-14.97%</td>
+                            <td class="distance-low">-41.77%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">EHC</td>
-                            <td class="price-cell">$93.74</td>
+                            <td class="price-cell">$93.53</td>
                             <td class="price-cell">$91.94</td>
-                            <td class="distance-low">+1.95%</td>
+                            <td class="distance-low">+1.73%</td>
+                            <td class="distance-low">-19.27%</td>
+                            <td class="distance-low">-17.60%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">DOX</td>
-                            <td class="price-cell">$74.39</td>
-                            <td class="price-cell">$73.84</td>
-                            <td class="distance-low">+0.74%</td>
+                            <td class="price-cell">$73.50</td>
+                            <td class="price-cell">$73.50</td>
+                            <td class="distance-low">+0.00%</td>
+                            <td class="distance-low">-12.06%</td>
+                            <td class="distance-low">-12.18%</td>
+                        </tr>
+
+                        <tr>
+                            <td class="ticker-cell">MANH</td>
+                            <td class="price-cell">$131.40</td>
+                            <td class="price-cell">$127.90</td>
+                            <td class="distance-low">+2.74%</td>
+                            <td class="distance-low">-27.63%</td>
+                            <td class="distance-low">-39.10%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">OWL</td>
-                            <td class="price-cell">$11.75</td>
-                            <td class="price-cell">$11.68</td>
-                            <td class="distance-low">+0.59%</td>
+                            <td class="price-cell">$11.67</td>
+                            <td class="price-cell">$11.66</td>
+                            <td class="distance-low">+0.06%</td>
+                            <td class="distance-low">-26.74%</td>
+                            <td class="distance-low">-38.12%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">AVTR</td>
-                            <td class="price-cell">$10.90</td>
+                            <td class="price-cell">$10.84</td>
                             <td class="price-cell">$10.62</td>
-                            <td class="distance-low">+2.59%</td>
+                            <td class="distance-low">+2.02%</td>
+                            <td class="distance-low">-7.23%</td>
+                            <td class="distance-low">-6.92%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">PAYC</td>
-                            <td class="price-cell">$125.54</td>
+                            <td class="price-cell">$124.87</td>
                             <td class="price-cell">$124.40</td>
-                            <td class="distance-low">+0.91%</td>
+                            <td class="distance-low">+0.38%</td>
+                            <td class="distance-low">-32.29%</td>
+                            <td class="distance-low">-43.85%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">SFM</td>
-                            <td class="price-cell">$68.17</td>
+                            <td class="price-cell">$68.06</td>
                             <td class="price-cell">$67.64</td>
-                            <td class="distance-low">+0.78%</td>
+                            <td class="distance-low">+0.62%</td>
+                            <td class="distance-low">-18.80%</td>
+                            <td class="distance-low">-54.40%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">PCOR</td>
-                            <td class="price-cell">$51.10</td>
+                            <td class="price-cell">$51.00</td>
                             <td class="price-cell">$50.49</td>
-                            <td class="distance-low">+1.21%</td>
+                            <td class="distance-low">+1.01%</td>
+                            <td class="distance-low">-31.27%</td>
+                            <td class="distance-low">-20.44%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">EXLS</td>
-                            <td class="price-cell">$33.35</td>
-                            <td class="price-cell">$33.25</td>
-                            <td class="distance-low">+0.29%</td>
+                            <td class="price-cell">$33.02</td>
+                            <td class="price-cell">$33.01</td>
+                            <td class="distance-low">+0.03%</td>
+                            <td class="distance-low">-15.68%</td>
+                            <td class="distance-low">-22.25%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">PCTY</td>
-                            <td class="price-cell">$127.38</td>
+                            <td class="price-cell">$127.27</td>
                             <td class="price-cell">$125.76</td>
-                            <td class="distance-low">+1.28%</td>
+                            <td class="distance-low">+1.20%</td>
+                            <td class="distance-low">-9.62%</td>
+                            <td class="distance-low">-29.96%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">CHWY</td>
-                            <td class="price-cell">$26.43</td>
+                            <td class="price-cell">$26.46</td>
                             <td class="price-cell">$26.34</td>
-                            <td class="distance-low">+0.34%</td>
+                            <td class="distance-low">+0.46%</td>
+                            <td class="distance-low">-19.62%</td>
+                            <td class="distance-low">-22.79%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">ESTC</td>
-                            <td class="price-cell">$59.77</td>
+                            <td class="price-cell">$59.53</td>
                             <td class="price-cell">$58.74</td>
-                            <td class="distance-low">+1.75%</td>
+                            <td class="distance-low">+1.34%</td>
+                            <td class="distance-low">-34.39%</td>
+                            <td class="distance-low">-25.67%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">BSY</td>
-                            <td class="price-cell">$32.05</td>
-                            <td class="price-cell">$31.88</td>
-                            <td class="distance-low">+0.53%</td>
+                            <td class="price-cell">$31.76</td>
+                            <td class="price-cell">$31.73</td>
+                            <td class="distance-low">+0.09%</td>
+                            <td class="distance-low">-36.74%</td>
+                            <td class="distance-low">-44.17%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">BFAM</td>
-                            <td class="price-cell">$87.60</td>
+                            <td class="price-cell">$87.46</td>
                             <td class="price-cell">$87.26</td>
-                            <td class="distance-low">+0.39%</td>
+                            <td class="distance-low">+0.23%</td>
+                            <td class="distance-low">-15.60%</td>
+                            <td class="distance-low">-25.63%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">HRB</td>
-                            <td class="price-cell">$37.16</td>
+                            <td class="price-cell">$37.02</td>
                             <td class="price-cell">$36.56</td>
-                            <td class="distance-low">+1.63%</td>
+                            <td class="distance-low">+1.24%</td>
+                            <td class="distance-low">-24.36%</td>
+                            <td class="distance-low">-31.01%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">DUOL</td>
-                            <td class="price-cell">$121.16</td>
+                            <td class="price-cell">$120.32</td>
                             <td class="price-cell">$119.61</td>
-                            <td class="distance-low">+1.30%</td>
+                            <td class="distance-low">+0.59%</td>
+                            <td class="distance-low">-54.58%</td>
+                            <td class="distance-low">-64.64%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">RYAN</td>
-                            <td class="price-cell">$46.90</td>
+                            <td class="price-cell">$46.99</td>
                             <td class="price-cell">$46.18</td>
-                            <td class="distance-low">+1.56%</td>
+                            <td class="distance-low">+1.75%</td>
+                            <td class="distance-low">-11.66%</td>
+                            <td class="distance-low">-18.33%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">DOCS</td>
-                            <td class="price-cell">$35.03</td>
+                            <td class="price-cell">$34.94</td>
                             <td class="price-cell">$34.31</td>
-                            <td class="distance-low">+2.11%</td>
+                            <td class="distance-low">+1.85%</td>
+                            <td class="distance-low">-47.80%</td>
+                            <td class="distance-low">-39.68%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">DBX</td>
-                            <td class="price-cell">$24.69</td>
+                            <td class="price-cell">$24.91</td>
                             <td class="price-cell">$24.41</td>
-                            <td class="distance-low">+1.19%</td>
+                            <td class="distance-low">+2.05%</td>
+                            <td class="distance-low">-16.14%</td>
+                            <td class="distance-low">-4.69%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">GTLB</td>
-                            <td class="price-cell">$32.68</td>
+                            <td class="price-cell">$32.77</td>
                             <td class="price-cell">$32.09</td>
-                            <td class="distance-low">+1.84%</td>
+                            <td class="distance-low">+2.12%</td>
+                            <td class="distance-low">-35.80%</td>
+                            <td class="distance-low">-25.52%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">MTN</td>
-                            <td class="price-cell">$127.40</td>
+                            <td class="price-cell">$127.17</td>
                             <td class="price-cell">$124.15</td>
-                            <td class="distance-low">+2.62%</td>
+                            <td class="distance-low">+2.43%</td>
+                            <td class="distance-low">-13.45%</td>
+                            <td class="distance-low">-12.04%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">MORN</td>
-                            <td class="price-cell">$183.27</td>
+                            <td class="price-cell">$182.10</td>
                             <td class="price-cell">$179.22</td>
-                            <td class="distance-low">+2.26%</td>
+                            <td class="distance-low">+1.60%</td>
+                            <td class="distance-low">-14.43%</td>
+                            <td class="distance-low">-30.22%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">TFX</td>
-                            <td class="price-cell">$102.00</td>
+                            <td class="price-cell">$102.08</td>
                             <td class="price-cell">$100.18</td>
-                            <td class="distance-low">+1.82%</td>
+                            <td class="distance-low">+1.90%</td>
+                            <td class="distance-low">-16.65%</td>
+                            <td class="distance-low">-10.59%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">CCC</td>
                             <td class="price-cell">$6.84</td>
                             <td class="price-cell">$6.72</td>
-                            <td class="distance-low">+1.94%</td>
+                            <td class="distance-low">+1.79%</td>
+                            <td class="distance-low">-18.44%</td>
+                            <td class="distance-low">-31.44%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">GPK</td>
-                            <td class="price-cell">$12.05</td>
+                            <td class="price-cell">$11.96</td>
                             <td class="price-cell">$11.83</td>
-                            <td class="distance-low">+1.82%</td>
+                            <td class="distance-low">+1.10%</td>
+                            <td class="distance-low">-23.08%</td>
+                            <td class="distance-low">-45.55%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">S</td>
-                            <td class="price-cell">$13.15</td>
+                            <td class="price-cell">$13.11</td>
                             <td class="price-cell">$12.87</td>
-                            <td class="distance-low">+2.14%</td>
+                            <td class="distance-low">+1.90%</td>
+                            <td class="distance-low">-25.82%</td>
+                            <td class="distance-low">-23.84%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">APPF</td>
-                            <td class="price-cell">$183.62</td>
+                            <td class="price-cell">$183.21</td>
                             <td class="price-cell">$179.93</td>
-                            <td class="distance-low">+2.05%</td>
+                            <td class="distance-low">+1.82%</td>
+                            <td class="distance-low">-30.14%</td>
+                            <td class="distance-low">-41.60%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">DLB</td>
-                            <td class="price-cell">$61.13</td>
+                            <td class="price-cell">$61.12</td>
                             <td class="price-cell">$60.14</td>
-                            <td class="distance-low">+1.65%</td>
+                            <td class="distance-low">+1.64%</td>
+                            <td class="distance-low">-7.41%</td>
+                            <td class="distance-low">-14.95%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">FOUR</td>
-                            <td class="price-cell">$53.90</td>
+                            <td class="price-cell">$54.09</td>
                             <td class="price-cell">$52.65</td>
-                            <td class="distance-low">+2.37%</td>
+                            <td class="distance-low">+2.74%</td>
+                            <td class="distance-low">-20.90%</td>
+                            <td class="distance-low">-37.42%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">BILL</td>
-                            <td class="price-cell">$37.48</td>
+                            <td class="price-cell">$37.26</td>
                             <td class="price-cell">$36.55</td>
-                            <td class="distance-low">+2.54%</td>
+                            <td class="distance-low">+1.94%</td>
+                            <td class="distance-low">-24.27%</td>
+                            <td class="distance-low">-10.73%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">EEFT</td>
-                            <td class="price-cell">$67.55</td>
+                            <td class="price-cell">$67.81</td>
                             <td class="price-cell">$67.01</td>
-                            <td class="distance-low">+0.81%</td>
+                            <td class="distance-low">+1.19%</td>
+                            <td class="distance-low">-8.64%</td>
+                            <td class="distance-low">-26.37%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">BRBR</td>
-                            <td class="price-cell">$20.61</td>
+                            <td class="price-cell">$20.68</td>
                             <td class="price-cell">$20.12</td>
-                            <td class="distance-low">+2.44%</td>
+                            <td class="distance-low">+2.78%</td>
+                            <td class="distance-low">-31.95%</td>
+                            <td class="distance-low">-42.84%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">CRCL</td>
-                            <td class="price-cell">$55.32</td>
+                            <td class="price-cell">$55.34</td>
                             <td class="price-cell">$53.76</td>
-                            <td class="distance-low">+2.90%</td>
+                            <td class="distance-low">+2.94%</td>
+                            <td class="distance-low">-53.05%</td>
+                            <td class="distance-low">-64.05%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">NCNO</td>
-                            <td class="price-cell">$18.26</td>
+                            <td class="price-cell">$18.33</td>
                             <td class="price-cell">$18.02</td>
-                            <td class="distance-low">+1.36%</td>
+                            <td class="distance-low">+1.72%</td>
+                            <td class="distance-low">-31.48%</td>
+                            <td class="distance-low">-32.94%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">HOG</td>
-                            <td class="price-cell">$19.90</td>
+                            <td class="price-cell">$19.85</td>
                             <td class="price-cell">$19.33</td>
-                            <td class="distance-low">+2.95%</td>
+                            <td class="distance-low">+2.69%</td>
+                            <td class="distance-low">-26.19%</td>
+                            <td class="distance-low">-16.97%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">INSP</td>
-                            <td class="price-cell">$71.95</td>
+                            <td class="price-cell">$71.78</td>
                             <td class="price-cell">$70.77</td>
-                            <td class="distance-low">+1.67%</td>
+                            <td class="distance-low">+1.42%</td>
+                            <td class="distance-low">-2.63%</td>
+                            <td class="distance-low">-18.35%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">GTM</td>
-                            <td class="price-cell">$6.91</td>
-                            <td class="price-cell">$6.87</td>
-                            <td class="distance-low">+0.62%</td>
+                            <td class="price-cell">$6.86</td>
+                            <td class="price-cell">$6.86</td>
+                            <td class="distance-low">+0.07%</td>
+                            <td class="distance-low">-41.82%</td>
+                            <td class="distance-low">-29.95%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">BIRK</td>
-                            <td class="price-cell">$36.96</td>
+                            <td class="price-cell">$37.04</td>
                             <td class="price-cell">$36.44</td>
-                            <td class="distance-low">+1.40%</td>
+                            <td class="distance-low">+1.63%</td>
+                            <td class="distance-low">-5.89%</td>
+                            <td class="distance-low">-25.49%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">PENN</td>
                             <td class="price-cell">$12.40</td>
                             <td class="price-cell">$12.26</td>
-                            <td class="distance-low">+1.18%</td>
+                            <td class="distance-low">+1.10%</td>
+                            <td class="distance-low">-25.42%</td>
+                            <td class="distance-low">-28.72%</td>
+                        </tr>
+
+                        <tr>
+                            <td class="ticker-cell">SMMT</td>
+                            <td class="price-cell">$14.42</td>
+                            <td class="price-cell">$14.03</td>
+                            <td class="distance-low">+2.78%</td>
+                            <td class="distance-low">-20.86%</td>
+                            <td class="distance-low">-50.50%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">WEN</td>
-                            <td class="price-cell">$7.81</td>
+                            <td class="price-cell">$7.80</td>
                             <td class="price-cell">$7.60</td>
-                            <td class="distance-low">+2.76%</td>
+                            <td class="distance-low">+2.57%</td>
+                            <td class="distance-low">-5.97%</td>
+                            <td class="distance-low">-19.27%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">CLVT</td>
-                            <td class="price-cell">$2.15</td>
                             <td class="price-cell">$2.14</td>
-                            <td class="distance-low">+0.47%</td>
+                            <td class="price-cell">$2.13</td>
+                            <td class="distance-low">+0.30%</td>
+                            <td class="distance-low">-39.60%</td>
+                            <td class="distance-low">-42.06%</td>
                         </tr>
 
                         <tr>
                             <td class="ticker-cell">CERT</td>
-                            <td class="price-cell">$7.68</td>
+                            <td class="price-cell">$7.66</td>
                             <td class="price-cell">$7.49</td>
-                            <td class="distance-low">+2.54%</td>
-                        </tr>
-
-                        <tr>
-                            <td class="ticker-cell">SAIL</td>
-                            <td class="price-cell">$14.30</td>
-                            <td class="price-cell">$13.98</td>
-                            <td class="distance-low">+2.22%</td>
+                            <td class="distance-low">+2.20%</td>
+                            <td class="distance-low">-34.57%</td>
+                            <td class="distance-low">-22.36%</td>
                         </tr>
 
                         <tr>
@@ -2333,6 +2854,8 @@
                             <td class="price-cell">$22.91</td>
                             <td class="price-cell">$22.55</td>
                             <td class="distance-low">+1.60%</td>
+                            <td class="distance-low">-23.48%</td>
+                            <td class="distance-low">-24.39%</td>
                         </tr>
 
                     </tbody>
