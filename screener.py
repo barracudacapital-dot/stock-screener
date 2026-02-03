@@ -19,7 +19,8 @@ def get_tickers_from_file(filename):
     """Read tickers from file"""
     try:
         with open(filename, 'r') as f:
-            tickers = [line.strip() for line in f if line.strip()]
+            tickers = [line.strip() for line in f 
+                      if line.strip() and not line.strip().startswith('#')]
         return tickers
     except FileNotFoundError:
         print(f"Warning: {filename} not found")
