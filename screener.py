@@ -9,7 +9,7 @@ import time
 
 # Stock universe by region
 STOCK_UNIVERSE = {
-    'US': 'russell1000_tickers_corrected.txt',
+    'US': 'russell1000_tickers.txt',
     'Canada': 'tsx_composite_tickers.txt', 
     'UK': 'ftse_allshare_tickers.txt',
     'Europe': 'stoxx600_tickers.txt'
@@ -175,12 +175,17 @@ def create_email_body(results):
     """
     return html
 
-def send_email(subject, body_html, to_email, from_email, password):
-    """Send email via Gmail"""
+def send_email(subject, body_html, to_emails, from_email, password):
+    """Send email via Gmail to multiple recipients"""
     msg = MIMEMultipart('alternative')
     msg['Subject'] = subject
     msg['From'] = from_email
-    msg['To'] = to_email
+    
+    # Handle single email or list of emails
+    if isinstance(to_emails, str):
+        to_emails = [to_emails]
+    
+    msg['To'] = ', '.join(to_emails)
     
     html_part = MIMEText(body_html, 'html')
     msg.attach(html_part)
@@ -188,9 +193,9 @@ def send_email(subject, body_html, to_email, from_email, password):
     try:
         server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
         server.login(from_email, password)
-        server.sendmail(from_email, to_email, msg.as_string())
+        server.sendmail(from_email, to_emails, msg.as_string())
         server.quit()
-        print(f"Email sent successfully to {to_email}")
+        print(f"Email sent successfully to {', '.join(to_emails)}")
         return True
     except Exception as e:
         print(f"Error sending email: {str(e)}")
@@ -208,6 +213,10 @@ def main():
     if not gmail_password:
         print("ERROR: GMAIL_APP_PASSWORD environment variable not set")
         return
+    
+    # Recipients - always include both addresses
+    recipients = [gmail_user, 'eraats@hotmail.com']
+    print(f"Will send to: {', '.join(recipients)}")
     
     threshold = 0.03  # 3% threshold
     all_results = {}
@@ -233,7 +242,7 @@ def main():
     send_email(
         subject=subject,
         body_html=email_body,
-        to_email=gmail_user,
+        to_emails=recipients,
         from_email=gmail_user,
         password=gmail_password
     )
