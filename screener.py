@@ -34,6 +34,13 @@ def calculate_52week_high_low(ticker, threshold=0.03):
     """
     try:
         stock = yf.Ticker(ticker)
+        
+        # Get company name
+        try:
+            company_name = stock.info.get('longName') or stock.info.get('shortName') or ticker
+        except:
+            company_name = ticker
+        
         # Get 1 year of historical data
         hist = stock.history(period="1y")
         
@@ -65,6 +72,7 @@ def calculate_52week_high_low(ticker, threshold=0.03):
             pct_from_high = ((current_price / high_52w) - 1) * 100
             return {
                 'type': 'high',
+                'company_name': company_name,
                 'price': current_price,
                 'level': high_52w,
                 'distance': pct_from_high,
@@ -77,6 +85,7 @@ def calculate_52week_high_low(ticker, threshold=0.03):
             pct_from_low = ((current_price / low_52w) - 1) * 100
             return {
                 'type': 'low',
+                'company_name': company_name,
                 'price': current_price,
                 'level': low_52w,
                 'distance': pct_from_low,
@@ -106,6 +115,7 @@ def screen_region(region_name, tickers, threshold=0.03):
         if result:
             stock_info = {
                 'ticker': ticker,
+                'company_name': result['company_name'],
                 'price': round(result['price'], 2),
                 'level': round(result['level'], 2),
                 'distance': round(result['distance'], 2),
@@ -319,6 +329,15 @@ def create_dashboard_html(results):
             font-size: 1.1em;
         }}
         
+        .company-cell {{
+            color: #7f8c8d;
+            font-size: 0.95em;
+            max-width: 250px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }}
+        
         .price-cell {{
             color: #34495e;
         }}
@@ -403,17 +422,18 @@ def create_dashboard_html(results):
                     <span>52-Week Highs</span>
                     <span class="badge high">{len(highs)} stocks</span>
                 </h3>
-                <input type="text" class="search-box" placeholder="Search tickers..." 
+                <input type="text" class="search-box" placeholder="Search tickers or companies..." 
                        onkeyup="filterTable(this, '{region}-highs-table')">
                 <table id="{region}-highs-table">
                     <thead>
                         <tr>
                             <th class="high sortable" onclick="sortTable('{region}-highs-table', 0)">Ticker</th>
-                            <th class="high sortable" onclick="sortTable('{region}-highs-table', 1)">Current Price</th>
-                            <th class="high sortable" onclick="sortTable('{region}-highs-table', 2)">52W High</th>
-                            <th class="high sortable" onclick="sortTable('{region}-highs-table', 3)">Distance</th>
-                            <th class="high sortable" onclick="sortTable('{region}-highs-table', 4)">3M Return</th>
-                            <th class="high sortable" onclick="sortTable('{region}-highs-table', 5)">6M Return</th>
+                            <th class="high sortable" onclick="sortTable('{region}-highs-table', 1)">Company</th>
+                            <th class="high sortable" onclick="sortTable('{region}-highs-table', 2)">Current Price</th>
+                            <th class="high sortable" onclick="sortTable('{region}-highs-table', 3)">52W High</th>
+                            <th class="high sortable" onclick="sortTable('{region}-highs-table', 4)">Distance</th>
+                            <th class="high sortable" onclick="sortTable('{region}-highs-table', 5)">3M Return</th>
+                            <th class="high sortable" onclick="sortTable('{region}-highs-table', 6)">6M Return</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -427,6 +447,7 @@ def create_dashboard_html(results):
                 html += f"""
                         <tr>
                             <td class="ticker-cell">{stock['ticker']}</td>
+                            <td class="company-cell" title="{stock['company_name']}">{stock['company_name']}</td>
                             <td class="price-cell">${stock['price']:.2f}</td>
                             <td class="price-cell">${stock['level']:.2f}</td>
                             <td class="distance-high">{stock['distance']:+.2f}%</td>
@@ -450,17 +471,18 @@ def create_dashboard_html(results):
                     <span>52-Week Lows</span>
                     <span class="badge low">{len(lows)} stocks</span>
                 </h3>
-                <input type="text" class="search-box" placeholder="Search tickers..." 
+                <input type="text" class="search-box" placeholder="Search tickers or companies..." 
                        onkeyup="filterTable(this, '{region}-lows-table')">
                 <table id="{region}-lows-table">
                     <thead>
                         <tr>
                             <th class="low sortable" onclick="sortTable('{region}-lows-table', 0)">Ticker</th>
-                            <th class="low sortable" onclick="sortTable('{region}-lows-table', 1)">Current Price</th>
-                            <th class="low sortable" onclick="sortTable('{region}-lows-table', 2)">52W Low</th>
-                            <th class="low sortable" onclick="sortTable('{region}-lows-table', 3)">Distance</th>
-                            <th class="low sortable" onclick="sortTable('{region}-lows-table', 4)">3M Return</th>
-                            <th class="low sortable" onclick="sortTable('{region}-lows-table', 5)">6M Return</th>
+                            <th class="low sortable" onclick="sortTable('{region}-lows-table', 1)">Company</th>
+                            <th class="low sortable" onclick="sortTable('{region}-lows-table', 2)">Current Price</th>
+                            <th class="low sortable" onclick="sortTable('{region}-lows-table', 3)">52W Low</th>
+                            <th class="low sortable" onclick="sortTable('{region}-lows-table', 4)">Distance</th>
+                            <th class="low sortable" onclick="sortTable('{region}-lows-table', 5)">3M Return</th>
+                            <th class="low sortable" onclick="sortTable('{region}-lows-table', 6)">6M Return</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -474,6 +496,7 @@ def create_dashboard_html(results):
                 html += f"""
                         <tr>
                             <td class="ticker-cell">{stock['ticker']}</td>
+                            <td class="company-cell" title="{stock['company_name']}">{stock['company_name']}</td>
                             <td class="price-cell">${stock['price']:.2f}</td>
                             <td class="price-cell">${stock['level']:.2f}</td>
                             <td class="distance-low">{stock['distance']:+.2f}%</td>
@@ -650,8 +673,8 @@ def main():
         return
     
     # Recipients
-    recipients = gmail_user  # Single recipient
-    print(f"Will send to: {recipients}")
+    recipients = [gmail_user, 'eraats@hotmail.com']
+    print(f"Will send to: {', '.join(recipients)}")
     
     threshold = 0.03  # 3% threshold
     all_results = {}
